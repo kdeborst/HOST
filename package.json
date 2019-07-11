@@ -1,0 +1,37 @@
+{
+  "name": "host",
+  "version": "1.0.0",
+  "description": "HOST® Meal-Share Social Community Connector",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server"
+  },
+  "keywords": [
+    "community",
+    "meal-share",
+    "social",
+    "network",
+    "food",
+    "events",
+    "takeaway",
+    "non-commercial",
+    "HOST"
+  ],
+  "author": "Kevin de Borst",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.1.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.1.1",
+    "gravatar": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.4",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.1",
+    "nodemon": "^1.19.1"
+  }
+}
