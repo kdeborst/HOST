@@ -1,0 +1,3 @@
+{
+    "mongoURI": "mongodb+srv://kdeborst:kdeborst123456@host-v3chr.azure.mongodb.net/test?retryWrites=true&w=majority"
+}
