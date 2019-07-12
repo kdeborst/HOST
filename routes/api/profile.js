@@ -4,7 +4,7 @@ const router = express.Router();
 
 //Route:        GET api/profile
 //Description:  Test Route
-//Access:       Prublic
+//Access:       Public
 router.get('/', (req, res) => res.send('Profile route'));
 
 module.exports = router;
