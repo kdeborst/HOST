@@ -6,10 +6,10 @@ const Profile = require('../../models/Profile');
 const authentication = require('../../middleware/authentication');
 const { check, validationResult } = require('express-validator');
 
-//Route:        GET api/profile/individual
+//Route:        GET api/profile/user
 //Description:  Get personal profile of current user
 //Access:       Private
-router.get('/individual', authentication, async (req, res) => {
+router.get('/user', authentication, async (req, res) => {
   try {
     const profile = await Profile.findOne({ user: req.user.id }).populate(
       'user',
@@ -117,5 +117,45 @@ router.post(
     }
   }
 );
+
+//Route:        GET api/profile
+//Description:  Retrieve all profiles
+//Access:       Public
+router.get('/', async (req, res) => {
+  try {
+    const profiles = await Profile.find().populate('user', ['name', 'avatar']);
+    res.json(profiles);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server Error');
+  }
+});
+
+//Route:        GET api/profile/user/:user_id
+//Description:  Get profile by user ID
+//Access:       Public
+router.get('/user/:user_id', async (req, res) => {
+  try {
+    const profile = await Profile.findOne({
+      user: req.params.user_id
+    }).populate('user', ['name', 'avatar']);
+
+    if (!profile)
+      return res
+        .status(400)
+        .json({ msg: 'We could not find the profile.. Please try again' });
+
+    res.json(profile);
+  } catch (err) {
+    console.error(err.message);
+
+    if (err.kind == 'ObjectId') {
+      return res
+        .status(400)
+        .json({ msg: 'We could not find the profile.. Please try again' });
+    }
+    res.status(500).send('Server Error');
+  }
+});
 
 module.exports = router;
