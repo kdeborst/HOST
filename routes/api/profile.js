@@ -86,12 +86,12 @@ router.post(
     //Construct Social Media Object
     profileFields.social = {};
 
-    if (youtube) profileFields.youtube = youtube;
-    if (twitter) profileFields.twitter = twitter;
-    if (facebook) profileFields.facebook = facebook;
-    if (linkedin) profileFields.linkedin = linkedin;
-    if (instagram) profileFields.instagram = instagram;
-    if (pinterest) profileFields.pinterest = pinterest;
+    if (youtube) profileFields.social.youtube = youtube;
+    if (twitter) profileFields.social.twitter = twitter;
+    if (facebook) profileFields.social.facebook = facebook;
+    if (linkedin) profileFields.social.linkedin = linkedin;
+    if (instagram) profileFields.social.instagram = instagram;
+    if (pinterest) profileFields.social.pinterest = pinterest;
 
     try {
       let profile = await Profile.findOne({ user: req.user.id });
@@ -154,6 +154,27 @@ router.get('/user/:user_id', async (req, res) => {
         .status(400)
         .json({ msg: 'We could not find the profile.. Please try again' });
     }
+    res.status(500).send('Server Error');
+  }
+});
+
+//Route:        DELETE api/profile
+//Description:  Delete complete account
+//Access:       Private
+router.delete('/', authentication, async (req, res) => {
+  try {
+    //Remove users' profile
+    await Profile.findOneAndRemove({ user: req.user.id });
+
+    //Remove current user
+    await User.findOneAndRemove({ _id: req.user.id });
+
+    //Remove users' messages
+    //
+
+    res.json({ msg: 'Account Deleted' });
+  } catch (err) {
+    console.error(err.message);
     res.status(500).send('Server Error');
   }
 });
