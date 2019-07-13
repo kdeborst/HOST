@@ -4,6 +4,7 @@ const router = express.Router();
 const User = require('../../models/User');
 const Profile = require('../../models/Profile');
 const authentication = require('../../middleware/authentication');
+const { check, validationResult } = require('express-validator');
 
 //Route:        GET api/profile/individual
 //Description:  Get personal profile of current user
@@ -27,5 +28,94 @@ router.get('/individual', authentication, async (req, res) => {
     res.status(500).send('Server Error');
   }
 });
+
+//Route:        POST api/profile
+//Description:  Create & update personal profile for current user
+//Access:       Private
+router.post(
+  '/',
+  [
+    authentication,
+    [
+      check('location', 'Location is required')
+        .not()
+        .isEmpty(),
+      check('status', 'Status is required')
+        .not()
+        .isEmpty(),
+      check('skills', 'Skills are required')
+        .not()
+        .isEmpty(),
+      check('bio', 'Biography is required')
+        .not()
+        .isEmpty()
+    ]
+  ],
+  async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
+
+    const {
+      location,
+      status,
+      skills,
+      bio,
+      website,
+      youtube,
+      twitter,
+      facebook,
+      linkedin,
+      instagram,
+      pinterest
+    } = req.body;
+
+    //Construct Profile Object
+    const profileFields = {};
+    profileFields.user = req.user.id;
+
+    if (location) profileFields.location = location;
+    if (status) profileFields.status = status;
+    if (skills) {
+      profileFields.skills = skills.split(',').map(skill => skill.trim());
+    }
+    if (bio) profileFields.bio = bio;
+    if (website) profileFields.website = website;
+
+    //Construct Social Media Object
+    profileFields.social = {};
+
+    if (youtube) profileFields.youtube = youtube;
+    if (twitter) profileFields.twitter = twitter;
+    if (facebook) profileFields.facebook = facebook;
+    if (linkedin) profileFields.linkedin = linkedin;
+    if (instagram) profileFields.instagram = instagram;
+    if (pinterest) profileFields.pinterest = pinterest;
+
+    try {
+      let profile = await Profile.findOne({ user: req.user.id });
+
+      //Update Existing Profile
+      if (profile) {
+        profile = await Profile.findOneAndUpdate(
+          { user: req.user.id },
+          { $set: profileFields },
+          { new: true }
+        );
+
+        return res.json(profile);
+      }
+
+      //Create Profile
+      profile = new Profile(profileFields);
+      await profile.save();
+      res.json(profile);
+    } catch (err) {
+      console.error(err.message);
+      res.status(500).send('Server Error');
+    }
+  }
+);
 
 module.exports = router;

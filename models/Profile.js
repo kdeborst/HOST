@@ -8,7 +8,8 @@ const ProfileSchema = new mongoose.Schema({
     ref: 'user'
   },
   location: {
-    type: String
+    type: String,
+    required: true
   },
   status: {
     type: String,
@@ -19,7 +20,8 @@ const ProfileSchema = new mongoose.Schema({
     required: true
   },
   bio: {
-    type: String
+    type: String,
+    required: true
   },
   website: {
     type: String
