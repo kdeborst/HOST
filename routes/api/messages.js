@@ -127,7 +127,7 @@ router.put('/like/:msg_id', authentication, async (req, res) => {
   }
 });
 
-//Route:        PUT api/messages/like/:msg_id
+//Route:        PUT api/messages/unlike/:msg_id
 //Description:  Unlike message by ID
 //Access:       Private
 router.put('/unlike/:msg_id', authentication, async (req, res) => {
@@ -151,6 +151,81 @@ router.put('/unlike/:msg_id', authentication, async (req, res) => {
     await message.save();
 
     res.json(message.likes);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server Error');
+  }
+});
+
+//Route:        POST api/messages/comment/:msg_id
+//Description:  Create message comment
+//Access:       Private
+router.post(
+  '/comment/:msg_id',
+  [
+    authentication,
+    [
+      check('text', 'Text is required')
+        .not()
+        .isEmpty()
+    ]
+  ],
+  async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json(errors.array());
+    }
+
+    try {
+      const user = await User.findById(req.user.id).select('-password');
+      const message = await Message.findById(req.params.msg_id);
+      const newReaction = {
+        text: req.body.text,
+        name: user.name,
+        avatar: user.avatar,
+        user: req.user.id
+      };
+      message.comments.unshift(newReaction);
+      await message.save();
+      res.json(message.comments);
+    } catch (err) {
+      console.error(err.message);
+      res.status(500).send('Server Error');
+    }
+  }
+);
+
+//Route:        DELETE api/messages/comment/:msg_id/:com_id
+//Description:  Delete comment from message
+//Access:       Private
+router.delete('/comment/:msg_id/:com_id', authentication, async (req, res) => {
+  try {
+    const message = await Message.findById(req.params.msg_id);
+    //Retrieve Comment
+    const comment = message.comments.find(
+      comment => comment.id === req.params.com_id
+    );
+    //Verify comment existence
+    if (!comment) {
+      return res.status(404).json({
+        msg: 'We could not find this comment, please ensure it exists!'
+      });
+    }
+    //Verify user is authorised to delete comment
+    if (comment.user.toString() !== req.user.id) {
+      return res.status(401).json({
+        msg: 'You are not authorised to delete this comment'
+      });
+    }
+
+    const removeMsgId = message.comments
+      .map(comment => comment.user.toString())
+      .indexOf(req.user.id);
+
+    message.comments.splice(removeMsgId, 1);
+
+    await message.save();
+    res.json(message.comments);
   } catch (err) {
     console.error(err.message);
     res.status(500).send('Server Error');
