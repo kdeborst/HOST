@@ -29,7 +29,8 @@ const ProfileSchema = new mongoose.Schema({
   experience: [
     {
       event_type: {
-        type: String
+        type: String,
+        required: true
       },
       title: {
         type: String,
@@ -50,7 +51,8 @@ const ProfileSchema = new mongoose.Schema({
         default: false
       },
       cuisine_type: {
-        type: String
+        type: String,
+        required: true
       },
       description: {
         type: String

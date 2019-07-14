@@ -179,4 +179,75 @@ router.delete('/', authentication, async (req, res) => {
   }
 });
 
+//Route:        PUT api/profile/experience
+//Description:  Add experience to profile
+//Access:       Private
+router.put(
+  '/experience',
+  [
+    authentication,
+    [
+      check(
+        'event_type',
+        'What type of event have you Hosted? This field is required..'
+      )
+        .not()
+        .isEmpty(),
+      check('title', 'Please provide a title for your experience..')
+        .not()
+        .isEmpty(),
+      check('from', 'Please provide a start date for your experience..')
+        .not()
+        .isEmpty(),
+      check(
+        'cuisine_type',
+        'What did you cook or eat at your experience? This field is required..'
+      )
+        .not()
+        .isEmpty()
+    ]
+  ],
+  async (req, res) => {
+    const errors = validationResult(req);
+
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
+
+    const {
+      event_type,
+      title,
+      location,
+      from,
+      to,
+      current,
+      cuisine_type,
+      description,
+      guest_amount
+    } = req.body;
+
+    const newExperience = {
+      event_type,
+      title,
+      location,
+      from,
+      to,
+      current,
+      cuisine_type,
+      description,
+      guest_amount
+    };
+
+    try {
+      const profile = await Profile.findOne({ user: req.user.id });
+      profile.experience.unshift(newExperience);
+      await profile.save();
+      res.json(profile);
+    } catch (err) {
+      console.error(err.message);
+      res.status(500).send('Server Error');
+    }
+  }
+);
+
 module.exports = router;
