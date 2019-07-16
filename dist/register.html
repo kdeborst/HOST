@@ -33,23 +33,34 @@
             <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
             <li><a href="register.html"><i class="far fa-registered"></i> Register</a></li>
         </ul>
-    </nav> 
-    <main class="landing">
-        <div class="dark-overlay">
-            <div class="landing-inner">
-                <h1>HOST®: Prepare, Share & Experience</h1>
-                <p class="lead">
-                    The online social community for locating, connecting and promoting (local) hosts 
-                    who want to prepare food for pickup or organise a meal-share event at home.
-                </p>
-                <div class="buttons">
-                    <a class="btn btn-primary" href="register.html">Register</a>
-                    <a class="btn btn-primary" href="login.html">Login</a>
-                </div>
+    </nav>
+    <main class="container">
+        <h1 class="large text-primary">HOST® Account Registration</h1>
+        <p class="lead">
+            <i class="fas fa-user-edit"></i> Create Your Account
+        </p>
+        <form class="form" action="create-profile.html">
+            <div class="form-group">
+                <input type="text" placeholder="Name" name="name" required>
             </div>
-        </div>
+            <div class="form-group">
+                <input type="email" placeholder="E-mail" name="email" required>
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Password" name="password" minlength="6">
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Confirm password" name="password-confirm" minlength="6">
+            </div>
+            <input type="submit" class="btn btn-primary" value="Register">
+        </form>
+        <p class="my-1">Already have an account? 
+            <a href="login.html">Login</a>
+        </p>
     </main>
-
+    
+    <!-- HOST® Script Libraries -->
     <script src="js/host_main.js"></script>
+    
 </body>
 </html>

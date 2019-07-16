@@ -33,23 +33,31 @@
             <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
             <li><a href="register.html"><i class="far fa-registered"></i> Register</a></li>
         </ul>
-    </nav> 
-    <main class="landing">
-        <div class="dark-overlay">
-            <div class="landing-inner">
-                <h1>HOST®: Prepare, Share & Experience</h1>
-                <p class="lead">
-                    The online social community for locating, connecting and promoting (local) hosts 
-                    who want to prepare food for pickup or organise a meal-share event at home.
-                </p>
-                <div class="buttons">
-                    <a class="btn btn-primary" href="register.html">Register</a>
-                    <a class="btn btn-primary" href="login.html">Login</a>
-                </div>
-            </div>
+    </nav>
+    <main class="container">
+        <div class="alert alert-danger">
+            <p>Something doesn't seem right.. Please try again!</p>
         </div>
-    </main>
+        <h1 class="large text-primary">Account Login</h1>
+        <p class="lead">
+            <i class="fas fa-concierge-bell"></i> Login to your account:
+        </p>
 
+        <form class="form" action="dashboard.html">
+            <div class="form-group">
+                <input type="email" placeholder="E-mail" name="email" required>
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Password" name="password" required>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Login">
+        </form>
+        <p class="my-1">No Account Yet? 
+            <a href="register.html">Register</a>
+        </p>
+    </main>
+    
+    <!-- HOST® Script Libraries -->
     <script src="js/host_main.js"></script>
 </body>
 </html>
