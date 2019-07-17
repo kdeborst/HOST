@@ -1,7 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Landing = () => {
     return (
+        
         <main className="landing">
             <div className="dark-overlay">
                 <div className="landing-inner">
@@ -11,12 +13,13 @@ const Landing = () => {
                         who want to prepare food for pickup or organise a meal-share event at home.
                     </p>
                     <div className="buttons">
-                        <a className="btn btn-primary" href="register.html">Register</a>
-                        <a className="btn btn-primary" href="login.html">Login</a>
+                        <Link className="btn btn-primary" to="/register">Register</Link>
+                        <Link className="btn btn-primary" to="/login">Login</Link>
                     </div>
                 </div>
             </div>
         </main>
+        
     )
 }
 
