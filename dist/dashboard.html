@@ -29,17 +29,88 @@
             </a>
         </h1>
         <ul>
-            <li><a href="community.html">HOST® Community</a></li>
-            <li><a href="events.html">Experience(s)</a></li>
-            <li><a href="hosting.html">Become a HOST®</a></li>
-            <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
-            <li><a href="register.html"><i class="far fa-registered"></i> Register</a></li>
+            <li><a href="community.html"><i class="fas fa-utensils"></i> HOST® Community</a></li>
+            <li><a href="newsfeed.html"><i class="far fa-comments"></i> Newsfeed</a></li>
+            <li><a href="account.html"><i class="fas fa-user-circle"></i> My Profile</a></li>
+            <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
         </ul>
     </nav>
 
     <!-- Container -->
     <main class="container">
         
+        <!-- Dashboard Header -->
+        <h1 class="large text-primary">My HOST® Dashboard</h1>
+        <p class="lead"><i class="fas fa-user-circle"></i> Welcome Kevin de Borst</p>
+
+        <!-- Account Dashboard Buttons -->
+        <div class="dashboard-buttons">
+            <a class="btn btn-light" href="add-experience.html"><i class="fas fa-store"></i> Add Experience</a>
+            <a class="btn btn-light" href="create-message.html"><i class="fas fa-envelope-open-text"></i> Add Message</a>
+            <a class="btn btn-light" href="update-profile.html"><i class="fas fa-user-edit"></i> Edit Profile</a>
+        </div>
+
+        <!-- Experience Credentials -->
+        <h2 class="my-2">My Experiences</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Experience(s)</th>
+                    <th class="hide-sm">Title</th>
+                    <th class="hide-sm">Timeline</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Placeholder</td>
+                    <td class="hide-sm">Placeholder</td>
+                    <td class="hide-sm">Placeholder</td>
+                    <td><button class="btn btn-danger"><i class="fas fa-ban"></i> Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Placeholder</td>
+                    <td class="hide-sm">Placeholder</td>
+                    <td class="hide-sm">Placeholder</td>
+                    <td><button class="btn btn-danger"><i class="fas fa-ban"></i> Remove</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Account Messages -->
+        <h2 class="my-2">My Newsfeed Messages</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Text</th>
+                    <th class="hide-sm">Likes</th>
+                    <th class="hide-sm">Comments</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Placeholder</td>
+                    <td class="hide-sm">Placeholder</td>
+                    <td class="hide-sm">Placeholder</td>
+                    <td><button class="btn btn-danger"><i class="fas fa-ban"></i> Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Placeholder</td>
+                    <td class="hide-sm">Placeholder</td>
+                    <td class="hide-sm">Placeholder</td>
+                    <td><button class="btn btn-danger"><i class="fas fa-ban"></i> Remove</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Delete Account Button -->
+        <div class="my-2">
+            <button class="btn btn-danger">
+                <i class="far fa-trash-alt"></i> Delete Account
+            </button>
+        </div>
+
     </main>
 
     <!-- HOST® Script Library -->
