@@ -164,6 +164,9 @@ React, Mongoose, Redux;
 ####Technologies/Libraries:
 HTML 5.0, CSS 3, Sass Pre-Processor (CSS), RESTful Web API (CRUD), Font Awesome 5.0, Geolocation, Webservices, Async/ Await, React Hooks, JSON Web Tokens, Bcrypt Password Hashing, DevTools;
 
+####Plugins & Extension
+Uuid v4, Thunk, Redux DevTools, React Developer Tools, CORS: Access-Control-Allow-Origin;
+
 ####Server(s):
 Express JS;
 
