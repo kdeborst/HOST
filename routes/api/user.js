@@ -40,16 +40,9 @@ router.post(
         });
       }
 
-      const avatar = gravatar.url(email, {
-        s: '125',
-        r: 'pg',
-        d: 'mm'
-      });
-
       user = new User({
         name,
         email,
-        avatar,
         password
       });
 

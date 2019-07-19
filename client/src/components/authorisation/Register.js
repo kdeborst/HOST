@@ -1,3 +1,4 @@
+/* Required Dependencies */
 import React, { Fragment, useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -11,17 +12,18 @@ const Register = () => {
         password_confirm: ''
     });
 
-    /* Destructured Data */
+    /* Destructure(d) Data */
     const { name, email, password, password_confirm } = regFormData;
     
-    /* Event Variables */
+    /* Event Handlers */
     const onChange = e => setRegFormData({ ...regFormData, [e.target.name]: e.target.value });
-    const onSubmit = e => {
+    const onSubmit = async e => {
         e.preventDefault();
+        
         if(password !== password_confirm) {
             console.log('Passwords do not match');
         } else {
-            console.log(regFormData);
+            console.log('Success');
         }
     }
     
@@ -96,6 +98,7 @@ const Register = () => {
         </Fragment>
 
     )
+
 }
 
 export default Register
