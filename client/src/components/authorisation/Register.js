@@ -11,15 +11,24 @@ const Register = () => {
         password_confirm: ''
     });
 
-    /* Destruct Data */
+    /* Destructured Data */
     const { name, email, password, password_confirm } = regFormData;
+    
+    /* Event Variables */
     const onChange = e => setRegFormData({ ...regFormData, [e.target.name]: e.target.value });
+    const onSubmit = e => {
+        e.preventDefault();
+        if(password !== password_confirm) {
+            console.log('Passwords do not match');
+        } else {
+            console.log(regFormData);
+        }
+    }
     
     return (
 
         <Fragment>
             
-            {/* Container */}
             <main className="container">
 
                 {/* Registration Form Header */}
@@ -29,20 +38,52 @@ const Register = () => {
                 </p>
 
                 {/* Registration Form */}
-                <form className="form" action="create-profile.html">
+                <form className="form" onSubmit={e => onSubmit(e)}>
                     <div className="form-group">
-                        <input type="text" placeholder="Name" name="name" value={name} onChange={e => onChange(e)} required></input>
+                        <input 
+                            type="text" 
+                            placeholder="Name" 
+                            name="name" 
+                            value={name} 
+                            onChange={e => onChange(e)} 
+                            required>
+                        </input>
                     </div>
                     <div className="form-group">
-                        <input type="email" placeholder="E-mail" name="email" required></input>
+                        <input 
+                            type="email" 
+                            placeholder="E-mail" 
+                            name="email" 
+                            value={email} 
+                            onChange={e => onChange(e)} 
+                            required>
+                        </input>
                     </div>
                     <div className="form-group">
-                        <input type="password" placeholder="Password" name="password" minLength="6"></input>
+                        <input 
+                            type="password" 
+                            placeholder="Password" 
+                            name="password" 
+                            minLength="6" 
+                            value={password} 
+                            onChange={e => onChange(e)}>
+                        </input>
                     </div>
                     <div className="form-group">
-                        <input type="password" placeholder="Confirm password" name="password_confirm" minLength="6"></input>
+                        <input 
+                            type="password" 
+                            placeholder="Confirm password" 
+                            name="password_confirm" 
+                            minLength="6" 
+                            value={password_confirm} 
+                            onChange={e => onChange(e)}>
+                        </input>
                     </div>
-                    <input type="submit" className="btn btn-primary" value="Register"></input>
+                    <input 
+                        type="submit" 
+                        className="btn btn-primary" 
+                        value="Register">
+                    </input>
                 </form>
 
                 {/* Login Referral */}
