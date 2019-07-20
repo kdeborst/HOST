@@ -1,5 +1,12 @@
 /* Required Action Constances */
-import {REGISTRATION_SUCCESS, REGISTRATION_FAIL, ACCOUNT_LOADED, AUTHORISATION_ERROR } from '../actions/constances';
+import {
+    REGISTRATION_SUCCESS, 
+    REGISTRATION_ERROR, 
+    ACCOUNT_LOADED, 
+    AUTHORISATION_ERROR,
+    LOGIN_VERIFIED,
+    LOGIN_ERROR } 
+    from '../actions/constances';
 
 /* Initialising State */
 const initialState = {
@@ -16,6 +23,7 @@ export default function(state = initialState, action) {
 
     switch(type) {
         case REGISTRATION_SUCCESS:
+        case LOGIN_VERIFIED:
             localStorage.setItem('token', payload.token);
             return {
                 ...state,
@@ -23,8 +31,9 @@ export default function(state = initialState, action) {
                 isAuthenticated: true,
                 loading: false
             }
-        case REGISTRATION_FAIL:
+        case REGISTRATION_ERROR:
         case AUTHORISATION_ERROR:
+        case LOGIN_ERROR:
             localStorage.removeItem('token');
             return {
                 ...state,

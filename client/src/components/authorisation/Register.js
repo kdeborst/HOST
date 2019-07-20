@@ -3,10 +3,10 @@ import React, { Fragment, useState } from 'react';
 import { setAlert } from '../../actions/alert';
 import { register } from '../../actions/authorisation';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-const Register = ({ setAlert, register }) => {
+const Register = ({ setAlert, register, isAuthenticated }) => {
     
     /* Initialising State */
     const [regFormData, setRegFormData] = useState({
@@ -31,6 +31,11 @@ const Register = ({ setAlert, register }) => {
         }
     }
     
+    /* Redirect When Registered In */
+    if(isAuthenticated) {
+        return <Redirect to="/dashboard" />
+    }
+
     return (
 
         <Fragment>
@@ -108,7 +113,13 @@ const Register = ({ setAlert, register }) => {
 /* Setting Register PropType Config */
 Register.propTypes = {
     setAlert: PropTypes.func.isRequired,
-    register: PropTypes.func.isRequired
+    register: PropTypes.func.isRequired,
+    isAuthenticated: PropTypes.bool
 };
 
-export default connect(null, { setAlert, register }) (Register);
+/* Mapping Redux State To Component */
+const mapStateToProps = state => ({
+    isAuthenticated: state.authorisation.isAuthenticated // or try authentication if it doesnt work like this..
+});
+
+export default connect(mapStateToProps, { setAlert, register }) (Register);

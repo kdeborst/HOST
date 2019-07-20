@@ -1,8 +1,11 @@
 /* Required Dependencies */
 import React, { Fragment, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { login } from '../../actions/authorisation';
+import PropTypes from 'prop-types';
 
-const Login = () => {
+const Login = ({ login, isAuthenticated }) => {
     
     /* Initialising State */
     const [logFormData, setLogFormData] = useState({
@@ -15,8 +18,13 @@ const Login = () => {
     
     /* Event Handlers */
     const onChange = e => setLogFormData({ ...logFormData, [e.target.name]: e.target.value });
-    const onSubmit = async e => {e.preventDefault(); console.log('Success');}
+    const onSubmit = async e => {e.preventDefault(); login(email, password);}
     
+    /* Redirect When Logged In */
+    if(isAuthenticated) {
+        return <Redirect to="/dashboard" />
+    }
+
     return (
 
         <Fragment>
@@ -71,4 +79,15 @@ const Login = () => {
     
 }
 
-export default Login
+/* Setting Login PropType Config */
+Login.propTypes = {
+    login: PropTypes.func.isRequired,
+    isAuthenticated: PropTypes.bool
+}
+
+/* Mapping Redux State To Component */
+const mapStateToProps = state => ({
+    isAuthenticated: state.authorisation.isAuthenticated // or try authentication if it doesnt work like this..
+});
+
+export default connect(mapStateToProps, { login })(Login);
