@@ -1,7 +1,30 @@
 /* Required Authorisation Actions & Dependencies */
 import axios from 'axios';
 import { setAlert } from './alert';
-import { REGISTRATION_SUCCESS, REGISTRATION_FAIL } from './constances';
+import { REGISTRATION_SUCCESS, REGISTRATION_FAIL, ACCOUNT_LOADED, AUTHORISATION_ERROR } from './constances';
+import setAuthorisation from '../helpers/setAuthorisation';
+
+/* Load Users' Account */
+export const loadAccount = () => async dispatch => {
+    
+    /* Grab Token from Header IF it exists */
+    if(localStorage.token) {
+        setAuthorisation(localStorage.token);
+    }
+
+    /* API Request */
+    try {
+        const res = await axios.get('/api/authentication');
+        dispatch({
+            type: ACCOUNT_LOADED,
+            payload: res.data
+        });
+    } catch (err) {
+        dispatch({
+            type: AUTHORISATION_ERROR
+        });
+    }
+};
 
 /* Register New User */
 export const register = ({ name, email, password }) => async dispatch => {
