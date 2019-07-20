@@ -3,7 +3,7 @@ import { SET_ALERT, REMOVE_ALERT } from './constances';
 import uuid from 'uuid';
 
 /* Dispatch Alerts */
-export const setAlert = (alertMessage, alertType, timeout = 3000) => dispatch => {
+export const setAlert = (alertMessage, alertType, timeout = 5000) => dispatch => {
 
     /* Initialise & Generate Random ID */
     const id = uuid.v4();

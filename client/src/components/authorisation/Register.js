@@ -1,11 +1,12 @@
 /* Required Dependencies */
 import React, { Fragment, useState } from 'react';
 import { setAlert } from '../../actions/alert';
+import { register } from '../../actions/authorisation';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-const Register = ({ setAlert }) => {
+const Register = ({ setAlert, register }) => {
     
     /* Initialising State */
     const [regFormData, setRegFormData] = useState({
@@ -26,7 +27,7 @@ const Register = ({ setAlert }) => {
         if(password !== password_confirm) {
             setAlert('Passwords do not match', 'danger');
         } else {
-            console.log('Success');
+            register({ name, email, password });
         }
     }
     
@@ -104,8 +105,10 @@ const Register = ({ setAlert }) => {
 
 }
 
+/* Setting Register PropType Config */
 Register.propTypes = {
-    setAlert: PropTypes.func.isRequired
+    setAlert: PropTypes.func.isRequired,
+    register: PropTypes.func.isRequired
 };
 
-export default connect(null, { setAlert }) (Register);
+export default connect(null, { setAlert, register }) (Register);

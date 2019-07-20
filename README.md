@@ -153,7 +153,7 @@ The nurses received an offline leaflet from HOST® and decided to look with Elde
 Code-First, Rich Client Development;
 
 ####Core Script(s):
-ECMAScript 6+ Syntax (JavaScript6), TypeScript;
+(Vanilla) JavaScript ECMAScript 6+ (ES6) - JS ES6;
 
 ####IDEs/ SDKs: 
 Visual Studio Code 2019, MongoDB Compass Community, Postman DE 7.1.1;
@@ -162,7 +162,7 @@ Visual Studio Code 2019, MongoDB Compass Community, Postman DE 7.1.1;
 React, Mongoose, Redux;
 
 ####Technologies/Libraries:
-HTML 5.0, CSS 3, Sass Pre-Processor (CSS), RESTful Web API (CRUD), Font Awesome 5.0, Geolocation, Webservices, Async/ Await, React Hooks, JSON Web Tokens, Bcrypt Password Hashing, DevTools;
+HTML 5.0, CSS 3, RESTful Web API (CRUD), Font Awesome 5.0, Geolocation, Webservices, Async/ Await, React Hooks, JSON Web Tokens, Bcrypt Password Hashing, DevTools;
 
 ####Plugins & Extension
 Uuid v4, Thunk, Redux DevTools, React Developer Tools, CORS: Access-Control-Allow-Origin;
