@@ -1,10 +1,12 @@
 /* Required Dependencies */
-import React, { useState, Fragment } from 'react'
+import React, { useState, Fragment } from 'react';
+import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types'
+import { upgradeAccount } from '../../actions/profile';
+import PropTypes from 'prop-types';
 
 
-const CreateHostProfile = props => {
+const CreateHostProfile = ({ upgradeAccount, history }) => {
     
     /* Defining profileData Initial State */
     const [profileData, setProfileData] = useState({
@@ -13,7 +15,6 @@ const CreateHostProfile = props => {
         skills: '',
         bio: '',
         website: '',
-        experience: '',
         youtube: '',
         twitter: '',
         facebook: '',
@@ -31,7 +32,6 @@ const CreateHostProfile = props => {
         skills,
         bio,
         website,
-        experience,
         youtube,
         twitter,
         facebook,
@@ -42,6 +42,10 @@ const CreateHostProfile = props => {
 
     /* Action Functions */
     const onChange = e => setProfileData({ ...profileData, [e.target.name]: e.target.value });
+    const onSubmit = e => { 
+        e.preventDefault();
+        upgradeAccount(profileData, history);
+    };
 
     return (
         <Fragment>
@@ -52,11 +56,15 @@ const CreateHostProfile = props => {
             <small>* = Required Field</small>
             
             {/* Profile Form */}
-            <form className="form">
+            <form className="form" onSubmit={ e => onSubmit(e)}>
                 
                 <div className="form-group">
                     <input type="text" placeholder="Location" name="location" value={location} onChange={e => onChange(e)}></input>
                     <small>In which city do you live?</small>
+                </div>
+                <div className="form-group">
+                    <input type="text" placeholder="Website" name="website" value={website} onChange={e => onChange(e)}></input>
+                    <small>Do you have your own website?</small>
                 </div>
                 <div className="form-group">
                     <select name="status" value={status} onChange={e => onChange(e)}>
@@ -122,9 +130,9 @@ const CreateHostProfile = props => {
     )
 }
 
-
+/* Setting Create Host Profile PropType Config */
 CreateHostProfile.propTypes = {
-
+    upgradeAccount: PropTypes.func.isRequired
 }
 
-export default CreateHostProfile
+export default connect(null, { upgradeAccount })(withRouter(CreateHostProfile));
