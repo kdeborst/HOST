@@ -28,7 +28,7 @@ const Navigation = ({ isAuthorised: { isAuthenticated, loading }, logout }) => {
     /* Defining the type of Navigation to return */
     return (
         <nav className="navbar bg-dark">
-            <h1><Link to="/">HOST®</Link></h1>
+            <h1><Link to="/"><i className="far fa-lemon"></i>{' '}HOST<small>®</small></Link></h1>
             { !loading && <Fragment>{ isAuthenticated ? accountLinks : publicLinks }</Fragment> }
         </nav>
     )
