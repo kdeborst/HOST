@@ -8,7 +8,8 @@ import {
     AUTHORISATION_ERROR, 
     LOGIN_VERIFIED, 
     LOGIN_ERROR,
-    LOGOUT } 
+    LOGOUT,
+    CLEAR_CREDENTIALS } 
     from './constances';
 import setAuthorisation from '../helpers/setAuthorisation';
 
@@ -72,11 +73,10 @@ export const login = (email, password) => async dispatch => {
 }
 
 
-/* CLEAR PROFILE & LOGOUT ACCOUNT */
+/*  CLEAR CREDENTIALS & LOGOUT ACCOUNT */
 export const logout = () => dispatch => {
-    dispatch({
-        type: LOGOUT
-     });
+    dispatch({type: CLEAR_CREDENTIALS});
+    dispatch({type: LOGOUT});
 }
 
 

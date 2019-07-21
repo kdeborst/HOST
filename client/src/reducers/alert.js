@@ -1,4 +1,8 @@
-import { SET_ALERT, REMOVE_ALERT } from "../actions/constances";
+/* Required Dependencies */
+import { 
+    SET_ALERT, 
+    REMOVE_ALERT } 
+    from "../actions/constances";
 
 /* Initialising State */
 const initialState = [];
