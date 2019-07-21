@@ -5,7 +5,8 @@ import {
     ACCOUNT_LOADED, 
     AUTHORISATION_ERROR,
     LOGIN_VERIFIED,
-    LOGIN_ERROR } 
+    LOGIN_ERROR,
+    LOGOUT } 
     from '../actions/constances';
 
 /* Initialising State */
@@ -34,6 +35,7 @@ export default function(state = initialState, action) {
         case REGISTRATION_ERROR:
         case AUTHORISATION_ERROR:
         case LOGIN_ERROR:
+        case LOGOUT:
             localStorage.removeItem('token');
             return {
                 ...state,

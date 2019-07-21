@@ -1,7 +1,15 @@
 /* Required Authorisation Actions & Dependencies */
 import axios from 'axios';
 import { setAlert } from './alert';
-import { REGISTRATION_SUCCESS, REGISTRATION_ERROR, ACCOUNT_LOADED, AUTHORISATION_ERROR, LOGIN_VERIFIED, LOGIN_ERROR } from './constances';
+import { 
+    REGISTRATION_SUCCESS, 
+    REGISTRATION_ERROR, 
+    ACCOUNT_LOADED, 
+    AUTHORISATION_ERROR, 
+    LOGIN_VERIFIED, 
+    LOGIN_ERROR,
+    LOGOUT } 
+    from './constances';
 import setAuthorisation from '../helpers/setAuthorisation';
 
 
@@ -61,6 +69,14 @@ export const login = (email, password) => async dispatch => {
             type: LOGIN_ERROR
         });
     }
+}
+
+
+/* CLEAR PROFILE & LOGOUT ACCOUNT */
+export const logout = () => dispatch => {
+    dispatch({
+        type: LOGOUT
+     });
 }
 
 

@@ -8,9 +8,15 @@ import store from './store';
 import { loadAccount } from './actions/authorisation';
 import setAuthorisation from './helpers/setAuthorisation';
 
+/* HOST® Routing Components */
+import PrivateRoute from './components/routes/PrivateRoute';
+
 /* HOST® Authorisation Components */
 import Login from './components/authorisation/Login';
 import Register from './components/authorisation/Register';
+
+/* HOST® Dashboard Compenents */
+import Dashboard from './components/dashboard/Dashboard';
 
 /* HOST® Layout Compenents */
 import Navigation from './components/layout/Navigation';
@@ -43,6 +49,7 @@ const App = () => {
 						<Switch>
 							<Route exact path="/register" component={Register} />
 							<Route exact path="/login" component={Login} />
+							<PrivateRoute exact path="/dashboard" component={Dashboard} />
 						</Switch>
 					</main>
 				</Fragment>
