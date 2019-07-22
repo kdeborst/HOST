@@ -187,10 +187,7 @@ router.put(
   [
     authentication,
     [
-      check(
-        'event_type',
-        'What type of event have you Hosted? This field is required..'
-      )
+      check('event_type', 'What type of event have you Hosted? This field is required..')
         .not()
         .isEmpty(),
       check('title', 'Please provide a title for your experience..')
@@ -199,10 +196,7 @@ router.put(
       check('from', 'Please provide a start date for your experience..')
         .not()
         .isEmpty(),
-      check(
-        'cuisine_type',
-        'What did you cook or eat at your experience? This field is required..'
-      )
+      check('cuisine_type', 'What did you cook or eat at your experience? This field is required..')
         .not()
         .isEmpty()
     ]
@@ -222,8 +216,7 @@ router.put(
       to,
       current,
       cuisine_type,
-      description,
-      guest_amount
+      description
     } = req.body;
 
     const newExperience = {
@@ -234,8 +227,7 @@ router.put(
       to,
       current,
       cuisine_type,
-      description,
-      guest_amount
+      description
     };
 
     try {

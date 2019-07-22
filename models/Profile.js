@@ -56,9 +56,6 @@ const ProfileSchema = new mongoose.Schema({
       },
       description: {
         type: String
-      },
-      guest_amount: {
-        type: Number
       }
     }
   ],
