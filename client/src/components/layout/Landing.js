@@ -1,5 +1,5 @@
 /* Required Dependencies */
-import React from 'react'
+import React, { Fragment } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -13,21 +13,26 @@ const Landing = ({ isAuthenticated }) => {
     }
     
     return (
-        <main className="landing">
-            <div className="dark-overlay">
-                <div className="landing-inner">
-                    <h1>HOST®: Prepare, Share & Experience</h1>
-                    <p className="lead">
-                        The online social community for connecting and promoting (local) hosts 
-                        that want to prepare food for pickup or organise a meal-share event at home.
-                    </p>
-                    <div className="buttons">
-                        <Link className="btn btn-primary" to="/register">Register</Link>
-                        <Link className="btn btn-primary" to="/login">Login</Link>
+       
+        <Fragment>  
+
+            <div className="landing">
+                <div className="dark-overlay">
+                    <div className="landing-inner">
+                        <h1 className="large text-primary">HOST®: Prepare, Share & Experience</h1>
+                        <p className="lead">
+                            The online social community for connecting and promoting (local) hosts 
+                            that want to prepare food for pickup or organise a meal-share event at home.
+                        </p>
+                        <div className="buttons">
+                            <Link className="btn btn-primary" to="/register">Register</Link>
+                            <Link className="btn btn-primary" to="/login">Login</Link>
+                        </div>
                     </div>
                 </div>
             </div>
-        </main>
+
+        </Fragment>  
     )
 
 }

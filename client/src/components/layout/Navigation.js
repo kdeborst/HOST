@@ -18,8 +18,7 @@ const Navigation = ({ isAuthorised: { isAuthenticated, loading }, logout }) => {
     /* Initialisation of hyperlinks for public && VERIFIED_ACCOUNT */
     const publicLinks = (
         <ul>
-            <li><Link to="/community"><i className="fas fa-utensils" />{' '}HOST® Community</Link></li>
-            <li><Link to="/about"><i className="fas fa-info" />{' '}Become a HOST®</Link></li>
+            <li><Link to="/about"><i className="fas fa-info-circle" />{' '}About HOST®</Link></li>
             <li><Link to="/login"><i className="fas fa-sign-in-alt" />{' '}Login</Link></li>
             <li><Link to="/register"><i className="far fa-registered" />{' '}Register</Link></li>
         </ul>

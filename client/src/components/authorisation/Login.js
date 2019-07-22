@@ -29,49 +29,44 @@ const Login = ({ login, isAuthenticated }) => {
 
         <Fragment>
             
-            <main className="container">
+            {/* Login Form Header */}
+            <h1 className="large text-primary"><i className="fas fa-concierge-bell" /> HOST® Member Login</h1>
 
-                {/* Login Form Header */}
-                <h1 className="large text-primary">HOST® Member Login</h1>
-                <p className="lead">
-                    <i className="fas fa-concierge-bell"></i> Login to your account:
-                </p>
-
-                {/* Login Form */}
-                <form className="form" onSubmit={e => onSubmit(e)}>
-                    <div className="form-group">
-                        <input 
-                            type="email" 
-                            placeholder="E-mail" 
-                            name="email" 
-                            value={email} 
-                            onChange={e => onChange(e)} 
-                            required>
-                        </input>
-                    </div>
-                    <div className="form-group">
-                        <input 
-                            type="password" 
-                            placeholder="Password" 
-                            name="password" 
-                            minLength="6" 
-                            value={password} 
-                            onChange={e => onChange(e)}>
-                        </input>
-                    </div>
+            {/* Login Form */}
+            <form className="form" onSubmit={e => onSubmit(e)}>
+                <div className="form-group">
                     <input 
-                        type="submit" 
-                        className="btn btn-primary" 
-                        value="Login">
+                        type="email" 
+                        placeholder="E-mail" 
+                        name="email" 
+                        value={email} 
+                        onChange={e => onChange(e)} 
+                        required>
                     </input>
-                </form>
+                    <p>Please enter your HOST® Member Email</p>
+                </div>
+                <div className="form-group">
+                    <input 
+                        type="password" 
+                        placeholder="Password" 
+                        name="password" 
+                        minLength="6" 
+                        value={password} 
+                        onChange={e => onChange(e)}>
+                    </input>
+                    <p>Please enter your HOST® Member Password [At least 6 Characters]</p>
+                </div>
+                <input 
+                    type="submit" 
+                    className="btn btn-primary" 
+                    value="Login">
+                </input>
+            </form>
 
-                {/* Registration Referral */}
-                <p className="my-1">No Account Yet? 
-                    <Link to="/register"> Register</Link>
-                </p>
-
-            </main>
+            {/* Registration Referral */}
+            <p className="my-1">No Account Yet? 
+                <Link to="/register"> Register</Link>
+            </p>
 
         </Fragment>
 

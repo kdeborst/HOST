@@ -1,10 +1,10 @@
 /* Global Styles */
 :root {
-  --primary-color: #17a2b8;
+  --primary-color: #FF5722;
   --dark-color: #343a40;
   --light-color: #f4f4f4;
-  --danger-color: #dc3545;
-  --success-color: #28a745;
+  --danger-color: #F44336;
+  --success-color: #4CAF50;
 }
 
 * {
@@ -15,7 +15,7 @@
 
 body {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1rem;
+  font-size: 0.80rem;
   line-height: 1.6;
   background-color: #fff;
   color: #333;
@@ -52,7 +52,7 @@ img {
 }
 
 .large {
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
@@ -333,14 +333,14 @@ button {
 /* Landing Page */
 .landing {
   position: relative;
-  background: url('./img/cutting_herbs_background.jpg') no-repeat center center/cover;
+  background: url('./img/food_truck_meal_prep_background.jpg') no-repeat center center/cover;
   height: 100vh;
 }
 
 .landing-inner {
   color: #fff;
   height: 100%;
-  width: 80%;
+  width: 60%;
   margin: auto;
   display: flex;
   flex-direction: column;

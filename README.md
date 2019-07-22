@@ -5,18 +5,18 @@ ENTRY LEVEL SOFTWARE DEVELOPMENT
 
 Author: Kevin de Borst
 Institute: ITPH Academy, Zwolle
-Publication: 30-07-2019
-Version 1.0 
+Publication: 25-07-2019
+Version 1.0.2 
 
 
 ##TITLE: HOST® MEAL SHARE SOCIAL COMMUNITY CONNECTOR 
 Problem Area: Social exclusion(s), loneliness, community sharing, food-waste.
 Inspiration: www.eatwith.com; www.cookapp.com; experiences.chefsfeed.com;
-Desired App: Web-based community connector for meal-sharing initiatives at local homes.
+Desired App: Web-based social community platform for promoting meal-sharing initiatives (experiences) at local homes.
 
 
 ###What should it be?
-An online social web application for locating, connecting and promoting (local) hosts who want to prepare food for pickup or organise a meal-share event at home.
+An online social web application for commenting and promoting (local) hosts who want to prepare food for pickup or organise a meal-share event/experience at home.
 
 ###Where will it work?	
 The RESTful Web API and front-end pages allow users to find and view registered HOST® Events or (non-commercial) HOST® Takeaway services. A mobile first approach is expected and HOST® is to be introduced Nationally (The Netherlands) first.
@@ -35,10 +35,9 @@ There are two HOST® typologies and one webmaster role. Webmasters should be abl
 
 A) Scope of Visitor Functionalities:
 1. User visits HOST® website and is prompted to use Geolocation services.
-2. Based on Geolocation, the overview of HOST® locations is loaded.
-3. User explores results or searches for a: city, food category or event status.
-4. User can view details of the event or get in contact with the HOST by email.
-5. User & HOST® discuss upon terms, conditions and or pickup location.
+2. User explores results or searches for a: city, food category or event status.
+3. User can view details of the event or get in contact with the HOST by email.
+4. User & HOST® discuss upon terms, conditions and or pickup location.
 
 B) Scope of HOST® Functionalities
 1. Guests have to complete a HOST® Takeaway / HOST® Event Form

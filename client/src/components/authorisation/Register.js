@@ -40,69 +40,62 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
 
         <Fragment>
             
-            <main className="container">
+            {/* Registration Form Header */}
+            <h1 className="large text-primary"><i className="fas fa-user-edit" /> HOST® Registration</h1>
 
-                {/* Registration Form Header */}
-                <h1 className="large text-primary">HOST® Account Registration</h1>
-                <p className="lead">
-                    <i className="fas fa-user-edit"></i> Create Your Account
-                </p>
-
-                {/* Registration Form */}
-                <form className="form" onSubmit={e => onSubmit(e)}>
-                    <div className="form-group">
-                        <input 
-                            type="text" 
-                            placeholder="Name" 
-                            name="name" 
-                            value={name} 
-                            onChange={e => onChange(e)} 
-                            required>
-                        </input>
-                    </div>
-                    <div className="form-group">
-                        <input 
-                            type="email" 
-                            placeholder="E-mail" 
-                            name="email" 
-                            value={email} 
-                            onChange={e => onChange(e)} 
-                            required>
-                        </input>
-                    </div>
-                    <div className="form-group">
-                        <input 
-                            type="password" 
-                            placeholder="Password" 
-                            name="password" 
-                            minLength="6" 
-                            value={password} 
-                            onChange={e => onChange(e)}>
-                        </input>
-                    </div>
-                    <div className="form-group">
-                        <input 
-                            type="password" 
-                            placeholder="Confirm password" 
-                            name="password_confirm" 
-                            minLength="6" 
-                            value={password_confirm} 
-                            onChange={e => onChange(e)}>
-                        </input>
-                    </div>
+            {/* Registration Form */}
+            <form className="form" onSubmit={e => onSubmit(e)}>
+                <div className="form-group">
                     <input 
-                        type="submit" 
-                        className="btn btn-primary" 
-                        value="Register">
+                        type="text" 
+                        placeholder="Name" 
+                        name="name" 
+                        value={name} 
+                        onChange={e => onChange(e)} 
+                        required>
                     </input>
-                </form>
+                    </div>
+                <div className="form-group">
+                    <input 
+                        type="email" 
+                        placeholder="E-mail" 
+                        name="email" 
+                        value={email} 
+                        onChange={e => onChange(e)} 
+                        required>
+                    </input>
+                </div>
+                <div className="form-group">
+                    <input 
+                        type="password" 
+                        placeholder="Password" 
+                        name="password" 
+                        minLength="6" 
+                        value={password} 
+                        onChange={e => onChange(e)}>
+                    </input>
+                </div>
+                <div className="form-group">
+                    <input 
+                        type="password" 
+                        placeholder="Confirm password" 
+                        name="password_confirm" 
+                        minLength="6" 
+                        value={password_confirm} 
+                        onChange={e => onChange(e)}>
+                    </input>
+                </div>
+                <input 
+                    type="submit" 
+                    className="btn btn-primary" 
+                    value="Register">
+                </input>
+            </form>
 
-                {/* Login Referral */}
-                <p className="my-1">Already have an account? 
-                    <Link to="/login"> Login</Link>
-                </p>
-
-            </main>
+            {/* Login Referral */}
+            <p className="my-1">Already have an account? 
+                <Link to="/login"> Login</Link>
+            </p>
 
         </Fragment>
 

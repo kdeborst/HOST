@@ -11,6 +11,9 @@ import setAuthorisation from './helpers/setAuthorisation';
 /* HOST® Routing Components */
 import PrivateRoute from './components/routes/PrivateRoute';
 
+/* HOST® Public Components */
+import About from './components/public/About';
+
 /* HOST® Authorisation Components */
 import Login from './components/authorisation/Login';
 import Register from './components/authorisation/Register';
@@ -50,6 +53,7 @@ const App = () => {
 					<main className="container">
 						<Alert />
 						<Switch>
+							<Route exact path="/about" component={About}/>
 							<Route exact path="/register" component={Register} />
 							<Route exact path="/login" component={Login} />
 							<PrivateRoute exact path="/dashboard" component={Dashboard} />
