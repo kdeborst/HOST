@@ -18,6 +18,7 @@ import Register from './components/authorisation/Register';
 /* HOST® Dashboard Compenents */
 import Dashboard from './components/dashboard/Dashboard';
 import CreateHostProfile from './components/forms/CreateHostProfile';
+import EditProfile from './components/forms/EditProfile';
 
 /* HOST® Layout Compenents */
 import Navigation from './components/layout/Navigation';
@@ -52,6 +53,7 @@ const App = () => {
 							<Route exact path="/login" component={Login} />
 							<PrivateRoute exact path="/dashboard" component={Dashboard} />
 							<PrivateRoute exact path="/update-profile" component={CreateHostProfile} />
+							<PrivateRoute exact path="/edit-profile" component={EditProfile} />
 						</Switch>
 					</main>
 				</Fragment>

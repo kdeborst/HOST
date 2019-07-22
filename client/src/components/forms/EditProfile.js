@@ -1,12 +1,12 @@
 /* Required Dependencies */
-import React, { useState, Fragment } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { upgradeAccount } from '../../actions/profile';
+import { upgradeAccount, getAccountProfile } from '../../actions/profile';
 import PropTypes from 'prop-types';
 
 
-const CreateHostProfile = ({ upgradeAccount, history }) => {
+const EditProfile = ({ profile: { profile, loading }, upgradeAccount, getAccountProfile, history }) => {
     
     /* Defining profileData Initial State */
     const [profileData, setProfileData] = useState({
@@ -24,6 +24,24 @@ const CreateHostProfile = ({ upgradeAccount, history }) => {
     });
 
     const [addSocialNetworks, toggleSocialInputs] = useState(false);
+
+    /* Bugs upon sending the edited profileData */
+    useEffect(() => {
+        getAccountProfile();
+        setProfileData({
+            location: (loading || !profile.location ? '' : profile.location),
+            status: (loading || !profile.status ? '' : profile.status),
+            skills: (loading || !profile.skills ? '' : profile.skills.join(',')),
+            bio: (loading || !profile.bio ? '' : profile.bio),
+            website: (loading || !profile.website ? '' : profile.website),
+            youtube: (loading || !profile.social ? '' : profile.social.youtube),
+            twitter: (loading || !profile.social ? '' : profile.social.twitter),
+            facebook: (loading || !profile.social ? '' : profile.social.facebook),
+            linkedin: (loading || !profile.social ? '' : profile.social.linkedin),
+            instagram: (loading || !profile.social ? '' : profile.social.instagram),
+            pinterest: (loading || !profile.social ? '' : profile.social.pinterest)
+        })
+    }, [loading]);
 
     /* Destructure(d) Data */
     const {
@@ -44,15 +62,15 @@ const CreateHostProfile = ({ upgradeAccount, history }) => {
     const onChange = e => setProfileData({ ...profileData, [e.target.name]: e.target.value });
     const onSubmit = e => { 
         e.preventDefault();
-        upgradeAccount(profileData, history);
+        upgradeAccount(profileData, history, true);
     };
 
     return (
         <Fragment>
             
             {/* Profile Header */}
-            <h1 className="large text-primary">Create a HOST® Membership Profile</h1>
-            <p className="lead"><i className="far fa-address-card"></i> Please tell us something about yourself</p>
+            <h1 className="large text-primary">Edit Your HOST® Membership Profile</h1>
+            <p className="lead"><i className="far fa-address-card" /> Please tell us something about yourself</p>
             <small>* = Required Field</small>
             
             {/* Profile Form */}
@@ -130,9 +148,16 @@ const CreateHostProfile = ({ upgradeAccount, history }) => {
     )
 }
 
-/* Setting Create Host Profile PropType Config */
-CreateHostProfile.propTypes = {
-    upgradeAccount: PropTypes.func.isRequired
+/* Setting Edit Profile PropType Config */
+EditProfile.propTypes = {
+    upgradeAccount: PropTypes.func.isRequired,
+    getAccountProfile: PropTypes.func.isRequired,
+    profile: PropTypes.object.isRequired
 }
 
-export default connect(null, { upgradeAccount })(withRouter(CreateHostProfile));
+/* Mapping Redux State To Component */
+const mapStateToProps = state => ({
+    profile: state.profile
+});
+
+export default connect(mapStateToProps, { upgradeAccount, getAccountProfile })(withRouter(EditProfile));
