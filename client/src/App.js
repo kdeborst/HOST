@@ -19,6 +19,7 @@ import Register from './components/authorisation/Register';
 import Dashboard from './components/dashboard/Dashboard';
 import CreateHostProfile from './components/forms/CreateHostProfile';
 import EditProfile from './components/forms/EditProfile';
+import CreateExperience from './components/forms/CreateExperience';
 
 /* HOST® Layout Compenents */
 import Navigation from './components/layout/Navigation';
@@ -26,7 +27,7 @@ import Landing from './components/layout/Landing';
 import Alert from './components/layout/Alert';
 
 /* HOST® App Theme */
-import './App.css';
+import './HOST_Theme.css';
 
 /* Run Authorisation Verification */
 if(localStorage.token) {
@@ -54,6 +55,7 @@ const App = () => {
 							<PrivateRoute exact path="/dashboard" component={Dashboard} />
 							<PrivateRoute exact path="/update-profile" component={CreateHostProfile} />
 							<PrivateRoute exact path="/edit-profile" component={EditProfile} />
+							<PrivateRoute exact path="/add-experience" component={CreateExperience} />
 						</Switch>
 					</main>
 				</Fragment>

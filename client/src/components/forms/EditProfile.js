@@ -1,5 +1,5 @@
 /* Required Dependencies */
-import React, { useState, useEffect, Fragment } from 'react';
+import React, { useEffect, useState, Fragment } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { upgradeAccount, getAccountProfile } from '../../actions/profile';
@@ -60,10 +60,7 @@ const EditProfile = ({ profile: { profile, loading }, upgradeAccount, getAccount
 
     /* Action Functions */
     const onChange = e => setProfileData({ ...profileData, [e.target.name]: e.target.value });
-    const onSubmit = e => { 
-        e.preventDefault();
-        upgradeAccount(profileData, history, true);
-    };
+    const onSubmit = e => { e.preventDefault(); upgradeAccount(profileData, history, true)};
 
     return (
         <Fragment>

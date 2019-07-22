@@ -16,4 +16,5 @@ export const LOGOUT = 'LOGOUT';
 
 /* Profile & Dashboard Constances */
 export const DISPLAY_DASHBOARD = 'DISPLAY_DASHBOARD';
+export const UPDATE_PROFILE = 'UPDATE_PROFILE';
 export const PROFILE_ERROR = 'PROFILE_ERROR';

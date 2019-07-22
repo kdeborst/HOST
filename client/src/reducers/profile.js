@@ -1,6 +1,7 @@
 /* Required Dependencies */
 import { 
-    DISPLAY_DASHBOARD, 
+    DISPLAY_DASHBOARD,
+    UPDATE_PROFILE, 
     PROFILE_ERROR,
     CLEAR_CREDENTIALS } 
     from "../actions/constances";
@@ -20,6 +21,7 @@ export default function(state = initialState, action) {
 
     switch(type) {
         case DISPLAY_DASHBOARD:
+        case UPDATE_PROFILE:
             return {
                 ...state,
                 profile: payload,

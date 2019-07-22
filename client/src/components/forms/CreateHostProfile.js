@@ -40,12 +40,9 @@ const CreateHostProfile = ({ upgradeAccount, history }) => {
         pinterest
     } = profileData;
 
-    /* Action Functions */
+    /* State Action Functions */
     const onChange = e => setProfileData({ ...profileData, [e.target.name]: e.target.value });
-    const onSubmit = e => { 
-        e.preventDefault();
-        upgradeAccount(profileData, history);
-    };
+    const onSubmit = e => { e.preventDefault(); upgradeAccount(profileData, history);};
 
     return (
         <Fragment>

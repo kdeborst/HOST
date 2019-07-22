@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { getAccountProfile } from '../../actions/profile';
 import Loading from '../layout/Loader';
 import Menu from './Menu';
+import Experience from './Experience';
 import PropTypes from 'prop-types'
 
 const Dashboard = ({ getAccountProfile, authorisation: { user }, profile: { profile, loading } }) => {
@@ -19,6 +20,7 @@ const Dashboard = ({ getAccountProfile, authorisation: { user }, profile: { prof
             { profile !== undefined ? 
                 (<Fragment>
                     <Menu />
+                    <Experience experience={profile.experience}/>
                 </Fragment>) : 
                 (<Fragment><p>You are not setup to be a HOST® Event Organiser yet.. Interested in becoming a HOST®?</p>
                     <Link to='/update-profile' className="btn btn-primary my-1">Create HOST® Member Profile</Link>
