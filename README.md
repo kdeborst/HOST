@@ -5,7 +5,7 @@
 ___MICROSOFT CERTIFIED SOFTWARE DEVELOPER (MCSD)___
 ___ENTRY LEVEL SOFTWARE DEVELOPMENT___
 
-|  Author: Kevin de Borst  |  Institute: ITPH Academy Zwolle  |  Publication: 25-07-2019  |  v1.1.0  |
+|  Author: Kevin de Borst  |  Institute: ITPH Academy Zwolle  |  Publication: 25-07-2019  |  v1.1.1  |
 
 - - - -
 
@@ -33,75 +33,75 @@ ___ENTRY LEVEL SOFTWARE DEVELOPMENT___
 </details>
 <details>
     <summary>TECHNOLOGIES: FULL-STACK MERN WEBAPPLICATION</summary>
-        <details>
-            <summary>Approach</summary>
-            <ul>
-                <li>Code-First Development</li>
-                <li>Mobile First Design</li>
-                <li>Scalable Templates</li>
-                <li>RESTful Web API (CRUD)</li>
-                <li>Open Source Rich Client Development</li>
-            </ul>
+    <details>
+        <summary>Approach</summary>
+        <ul>
+            <li>Code-First Development</li>
+            <li>Mobile First Design</li>
+            <li>Scalable Templates</li>
+            <li>RESTful Web API (CRUD)</li>
+            <li>Open Source Rich Client Development</li>
+        </ul>
+    </details>
+    <details>
+        <summary>Core Script(s) & Extentions</summary>
+        <ul>
+            <li>JavaScript ECMAScript 6+ (ES6)</li>
+            <li>JavaScript React Syntax (JSX)</li>
+        </ul>
+    </details>
+    <details>
+        <summary>IDEs/ SDKs</summary>
+        <ul>
+            <li>Visual Studio Code 2019 v1.36.1</li>
+            <li>MongoDB Compass Community Edition 1.18.0</li>
+            <li>Postman DE 7.1.1</li>
+        </ul>
+    </details>
+    <details>
+        <summary>Frameworks</summary>
+        <ul>
+            <li>React v.16.8.6</li>
+            <li>Redux v.4.0.4</li>
+        </ul>
         </details>
-        <details>
-            <summary>Core Script(s) & Extentions</summary>
-            <ul>
-                <li>JavaScript ECMAScript 6+ (ES6)</li>
-                <li>JavaScript React Syntax (JSX)</li>
-            </ul>
-        </details>
-        <details>
-            <summary>IDEs/ SDKs</summary>
-            <ul>
-                <li>Visual Studio Code 2019 v1.36.1</li>
-                <li>MongoDB Compass Community Edition 1.18.0</li>
-                <li>Postman DE 7.1.1</li>
-            </ul>
-        </details>
-        <details>
-            <summary>Frameworks</summary>
-            <ul>
-                <li>React v.16.8.6</li>
-                <li>Redux v.4.0.4</li>
-            </ul>
-        </details>
-        <details>
-            <summary>Technologies/Libraries</summary>
-            <ul>
-                <li>HTML 5.0 & CSS 3.0</li>
-                <li>Bootstrap v.4.3.1 & Font Awesome v.5.9.0</li>
-                <li>React Hooks & Async/ Await</li>
-                <li>JSON Web Tokens v8.5.1</li>
-                <li>Bcrypt JS Password Hashing v.2.4.3</li>
-            </ul>
-        </details>
-        <details>
-            <summary>Plugins & Extension</summary>
-            <ul>
-                <li>Axios v0.19.0</li>
-                <li>Uuid v.4.0</li>
-                <li>Moment.JS v.2.24.0</li>
-                <li>Redux Thunk v.2.3.0</li>
-                <li>Redux DevTools v.2.13.8</li>
-                <li>React-Moment v.0.9.2</li>
-                <li>React-Redux v.7.1.0</li>
-                <li>React Developer Tools v.2.13.8</li>
-            </ul>
-        </details>
-        <details>
-            <summary>Server(s)</summary>
-            <ul>
-                <li>Express JS v.4.17.1</li>
-                <li>Express Validator (Plugin)</li>
-                <li>Mongoose v.5.6.6 (Plugin)</li>
-            </ul>
-        </details>
-        <details>
-            <summary>Database</summary>
-            <ul>
-                <li>Mongo DB Atlas 4.0</li>
-            </ul>
-        </details>
+    <details>
+        <summary>Technologies/Libraries</summary>
+        <ul>
+            <li>HTML 5.0 & CSS 3.0</li>
+            <li>Bootstrap v.4.3.1 & Font Awesome v.5.9.0</li>
+            <li>React Hooks & Async/ Await</li>
+            <li>JSON Web Tokens v8.5.1</li>
+            <li>Bcrypt JS Password Hashing v.2.4.3</li>
+        </ul>
+    </details>
+    <details>
+        <summary>Plugins & Extension</summary>
+        <ul>
+            <li>Axios v0.19.0</li>
+            <li>Uuid v.4.0</li>
+            <li>Moment.JS v.2.24.0</li>
+            <li>Redux Thunk v.2.3.0</li>
+            <li>Redux DevTools v.2.13.8</li>
+            <li>React-Moment v.0.9.2</li>
+            <li>React-Redux v.7.1.0</li>
+            <li>React Developer Tools v.2.13.8</li>
+        </ul>
+    </details>
+    <details>
+        <summary>Server(s)</summary>
+        <ul>
+            <li>Express JS v.4.17.1</li>
+            <li>Express Validator (Plugin)</li>
+            <li>Mongoose v.5.6.6 (Plugin)</li>
+        </ul>
+    </details>
+    <details>
+        <summary>Database</summary>
+        <ul>
+            <li>Mongo DB Atlas 4.0</li>
+        </ul>
+    </details>
 </details>
 
 
@@ -125,12 +125,17 @@ ___ENTRY LEVEL SOFTWARE DEVELOPMENT___
 11. [Persona 2: Elder Claire Thompson](#persona-2-elder-claire-thompson "Goto persona-2-elder-claire-thompson")
 
 #### LIST OF APP FEATURES ####
-12. [App Core Features](#app-core-features "Goto app-core-features")
-13. [Optional App Features](#optional-app-features "Goto optional-app-features")
-14. [Minimum App Requirements](#minimum-app-requirements "Goto minimum-app-requirements")
+12. [Core App Features](#core-app-features "Goto core-app-features")
+13. [MS MCSD's Main Project Requirements](#ms-mcsds-main-project-requirements "Goto ms-mcsds-main-project-requirements")
+14. [Desired Outcome: Prototype Core Features](#Desired-Outcome-Prototype-Core-Features "Goto Desired-Outcome-Prototype-Core-Features")
+15. [BUGTESTING](#BUGTESTING "Goto BUGTESTING")
+16. [Optional App Features](#optional-app-features "Goto optional-app-features")
+
+#### HOST® WIREFRAMES ####
+17. [HOST® MEAL SHARE SOCIAL COMMUNITY WIREFRAMES](#HOST-MEAL-SHARE-SOCIAL-COMMUNITY-WIREFRAMES "Goto HOST-MEAL-SHARE-SOCIAL-COMMUNITY-WIREFRAMES")
 
 #### TECHNOLOGIES ####
-15. [Technologies: Full Stack MERN](#technologies-full-stack-MERN "Goto technologies-full-stack-MERN")
+18. [Preferred Technologies: Full Stack MERN](#preferred-technologies-full-stack-MERN "Goto preferred-technologies-full-stack-MERN")
 
 - - - -
 
@@ -202,8 +207,8 @@ Some concerns that where mentioned were Silvia’s allergies, trustworthiness of
 
 ## PERSONAS & SCENARIOS ##
 
-### Persona 1: Cookie Monster ###
-Cookie Monster is a 20-year old exchange student from the USA who will study in The Netherlands for 12 months due to his academy-minor: ‘Pepernoten Bakken met Bakker Bart’. Cookie Monster is pursuing a traineeship as a pastry chef, but he realises that he has a small community and network to ask for local placement suggestions. Cookie Monster is a very frivolous chap, who can be everybody’s friend and he is currently living in a large refactored farmhouse in Bourtange (a very small village far from the realistic world). Although Cookie is really charismatic and has a lot of great innovative ideas when it comes to pastries, cheesecakes and other delicatessen; he can’t continuously explore the big cities to make himself feel happy. In this case he is both financially and time restricted with regards to his exchange-traineeship. He finds himself feeling lonely and secluded from the Dutch community due to his international background and the small village he lives in. In the meantime, he misses his friends and family in the USA. Cookie thinks: “There is more I can offer!”
+> Persona 1: Cookie Monster
+>>Cookie Monster is a 20-year old exchange student from the USA who will study in The Netherlands for 12 months due to his academy-minor: ‘Pepernoten Bakken met Bakker Bart’. Cookie Monster is pursuing a traineeship as a pastry chef, but he realises that he has a small community and network to ask for local placement suggestions. Cookie Monster is a very frivolous chap, who can be everybody’s friend and he is currently living in a large refactored farmhouse in Bourtange (a very small village far from the realistic world). Although Cookie is really charismatic and has a lot of great innovative ideas when it comes to pastries, cheesecakes and other delicatessen; he can’t continuously explore the big cities to make himself feel happy. In this case he is both financially and time restricted with regards to his exchange-traineeship. He finds himself feeling lonely and secluded from the Dutch community due to his international background and the small village he lives in. In the meantime, he misses his friends and family in the USA. Cookie thinks: “There is more I can offer!”
 
 #### Current Experiences: ####
 Cookie Monster struggles to make new friends and blend into society. He focuses on surviving, rather than experiencing a pleasurable time during his 12 months within The Netherlands. He doesn’t know that Dutch people are crazy about American Chocolate Chip Cookies – which is Cookie’s specialty – and that he could be a very valuable social connector in our Dutch society. For now, he is doubting whether or not he will finish his exchange minor or go back to the USA.
@@ -212,8 +217,8 @@ Cookie Monster struggles to make new friends and blend into society. He focuses 
 Cookie has a laptop and smartphone. One day he decided to try his chances on Tindr and a Dutch Social Network. He fetched his phone, asked Siri for: ‘dating apps and social networks’, and HOST® popped up on the third line within the search results. Cookie became interested and found - based on Geolocation services - that two of his African neighbours are hosting a Puff-Puff Backyard Party. After reading the profile, he wondered what Puff-Puffs are and he confronted his neighbours by commenting on their (online) event - since the neighbours were out at that time. The African neighbours were very enthusiastic and mentioned that the entire village had been invited. Cookie could join for free as he was new and the African neighbours did not know that Cookie had just moved in. Long story short: Cookie made new friends, had a great (international) experience and he added the African Puff-Puff Speciality to his pastry list. Cookie decided to stay and HOST® an American Cookie Party 10 weeks later.
 
 
-### Persona 2: Elder Claire Thompson ###
-Elder Claire Thompson is a very healthy 83-year-old woman who has lost all of her brothers and sisters. Since her friends have all passed away too, she decided to move to a caring institution. 
+> Persona 2: Elder Claire Thompson
+>> Elder Claire Thompson is a very healthy 83-year-old woman who has lost all of her brothers and sisters. Since her friends have all passed away too, she decided to move to a caring institution. 
 
 #### Current Experiences: ####
 In the evenings she eats with the other Elders; however, most of them suffer from Alzheimer or other serious mental diseases and the experience is daunting. Due to Elder Claire her healthy lifestyle, she beliefs that she doesn’t fit in with the group and finds herself feeling lonely and misunderstood. She turns to the nurses and asks if they know about a nice place or community where she can be herself and fits in. She would like to make new friends or have a buddy to share her experiences with.
@@ -227,7 +232,7 @@ The nurses received an offline leaflet from HOST® and decided to look with Elde
 Resources are limited and it is almost impossible to complete all of the above in only Three weeks time. Hence, focus is required and features will be split into: (1) Core; -and, (2) Optional App features (for future development). In some cases, one can find (code-)models and routes which are not implemented within the actual front-end components of the application yet. Please bear with the development of the application and also note that the database user is initialised for Admin. Obviously, this will be changed upon the further development of the application. For now, the main project requirements and the outcome is to be defined as follows:
 
 
-### MICROSOFTS' MCSD MAIN PROJECT REQUIREMENTS ###
+### MS MCSD's MAIN PROJECT REQUIREMENTS ###
 1. At least 2 different UI pages and at least 3 different user input elements.
 2. At least 1 UI element is affected by the user’s input.
 3. After the user submits their input a decision is made on that input that can cause at least 2 different results.
@@ -237,7 +242,7 @@ Resources are limited and it is almost impossible to complete all of the above i
 7. At least one string is localisable.
 
 
-#### Outcome: Prototype Functionalities & Core Application Features ####
+#### Desired Outcome: Prototype Core Features ####
 * Focus: 
     * security (authorisation)
     * scalability (containers, components)
@@ -264,7 +269,7 @@ Resources are limited and it is almost impossible to complete all of the above i
     * To comply with the MCSD requirements, there is decided to implement Moment JS as an extension.
     * Moment JS code can change DateTime to a local state (DD/MM/YY) when upgraded with Dutch language support!
 
-
+### BUGTESTING ###
 >Bug Test Update: 23 june 2019
 >>- Test performed in Google Chrome (with DevTool-extensions from section Technologies).
 >>- Small bug in React useState hook on edit profile // Update data makes app crash, but edits in DB.
@@ -302,9 +307,44 @@ Resources are limited and it is almost impossible to complete all of the above i
 * Two-Step e-mail validation should be applied when submitting an Event Form.
 
 
+## HOST® MEAL SHARE SOCIAL COMMUNITY WIREFRAMES ##
+<details>
+    <summary>WIREFRAMES IMAGES</summary>
+    <details>
+        <summary>Landing</summary>
+        ![picture alt](./client/src/img/templates/wireframe_landing.png "HOST® Landing Page Wireframe")
+    </details>
+    <details>
+        <summary>Register</summary>
+        ![picture alt](./client/src/img/templates/wireframe_register.png "HOST® Register Wireframe")
+    </details>
+    <details>
+        <summary>Login</summary>
+        ![picture alt](./client/src/img/templates/wireframe_login.png "HOST® Login Wireframe")
+    </details>
+    <details>
+        <summary>HOST® Guest Dashboard</summary>
+        ![picture alt](./client/src/img/templates/wireframe_guestdash.png "HOST® Guest Dashboard Wireframe")
+    </details>
+    <details>
+        <summary>HOST® Member Dashboard</summary>
+        ![picture alt](./client/src/img/templates/wireframe_memberdash.png "HOST® Member Dashboard Wireframe")
+    </details>
+    <details>
+        <summary>Create HOST® Profile Form</summary>
+        ![picture alt](./client/src/img/templates/wireframe_upgrade-profile.png "HOST® Upgrade Profile Form Wireframe")
+    </details>
+    <details>
+        <summary>Create HOST® Experience Event</summary>
+        ![picture alt](./client/src/img/templates/wireframe_add-experience.png "HOST® Add Experience Wireframe")
+    </details>
+</details>
+
+
 ## PREFERRED TECHNOLOGIES: FULL-STACK MERN ##
 
 <details>
+    <summary>HOST® MEAL SHARE SOCIAL COMMUNITY WIREFRAMES</summary>
     <details>
         <summary>Approach</summary>
         <ol>
