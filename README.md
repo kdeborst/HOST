@@ -11,17 +11,27 @@ ___ENTRY LEVEL SOFTWARE DEVELOPMENT___
 
 ### TITLE: HOST® MEAL SHARE SOCIAL COMMUNITY ###
 <details>
-    <summary>Executive Project Summary</summary>
-    <h3>Problem Area</h3>
+    <summary>Executive Summary</summary>
+    __Problem Area__
     <p>Social exclusion(s), loneliness, community sharing, food-waste.</p>
-    <h3>Inspiration</h3>
-    <p><http://www.eatwith.com>; <http://www.cookapp.com>; <http://experiences.chefsfeed.com></p>
-    <h3>Desired App</h3>
+    __Inspiration__
+    <p>http://www.eatwith.com; http://www.cookapp.com; http://experiences.chefsfeed.com</p>
+    __Desired App__
     <p>Web-based social community platform for promoting meal-sharing initiatives (experiences) at local homes.</p>
 </details>
 
-__Inspiration:__ ;
-__Desired App:__ 
+
+#### Table Of Content ####
+
+1. [What should it be?](#what-should-it-be? "Goto what-should-it-be?")
+1. [Where will it work?](#where-will-it-work? "Goto Where-will-it-work?")
+1. [Who will use it?](#who-will-use-it? "Goto Who-will-use-it?")
+1. [How will it be used?](#how-will-it-be-used? "Goto how-will-it-be-used?")
+1. [How do you market it?](#how-do-you-market-it "Goto how-do-you-market-it")
+1. [What could go wrong?](#what-could-go-wrong "Goto what-could-go-wrong")
+
+
+- - - -
 
 ### What should it be? ###
 An online social web application for commenting and promoting (local) hosts who want to prepare food for pickup or organise a meal-share event/experience at home.
