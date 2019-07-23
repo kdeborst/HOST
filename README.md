@@ -1,5 +1,4 @@
-![picture alt](./client/src/img/HOST_logo_transparent.jpg)
-
+![./client/src/img/HOST_logo_transparent.jpg]
 #HOST® Meal Share Social Community Connector#
 ##Design Document: Final Microsoft Professional Capstone Project##
 MICROSOFT CERTIFIED SOFTWARE DEVELOPER (MCSD)
