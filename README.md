@@ -18,6 +18,8 @@ ___ENTRY LEVEL SOFTWARE DEVELOPMENT___
     <p>http://www.eatwith.com; http://www.cookapp.com; http://experiences.chefsfeed.com</p>
     <h4>Desired App</h4>
     <p>Web-based social community platform for promoting meal-sharing initiatives (experiences) at local homes.</p>
+</details>
+<details>
     <summary>PROJECT MAIN OBJECTIVES</summary>
     <ol>
         <li>At least 2 different UI pages and at least 3 different user input elements.</li>
@@ -28,88 +30,106 @@ ___ENTRY LEVEL SOFTWARE DEVELOPMENT___
         <li>Date and time formats reflect the user’s local settings.</li>
         <li>At least one string is localisable.</li>
     </ol>
+</details>
+<details>
     <summary>TECHNOLOGIES: FULL-STACK MERN WEBAPPLICATION</summary>
-        <summary>Approach</summary>
-        <ul>
-            <li>Code-First Development</li>
-            <li>Mobile First Design</li>
-            <li>Scalable Templates</li>
-            <li>RESTful Web API (CRUD)</li>
-            <li>Open Source Rich Client Development</li>
-        </ul>
-        <summary>Core Script(s) & Extentions</summary>
-        <ul>
-            <li>JavaScript ECMAScript 6+ (ES6)</li>
-            <li>JavaScript React Syntax (JSX)</li>
-        </ul>
-        <summary>IDEs/ SDKs</summary>
-        <ul>
-            <li>Visual Studio Code 2019 v1.36.1</li>
-            <li>MongoDB Compass Community Edition 1.18.0</li>
-            <li>Postman DE 7.1.1</li>
-        </ul>
-        <summary>Frameworks</summary>
-        <ul>
-            <li>React v.16.8.6</li>
-            <li>Redux v.4.0.4</li>
-        </ul>
-        <summary>Technologies/Libraries</summary>
-        <ul>
-            <li>HTML 5.0 & CSS 3.0</li>
-            <li>Bootstrap v.4.3.1 & Font Awesome v.5.9.0</li>
-            <li>React Hooks & Async/ Await</li>
-            <li>JSON Web Tokens v8.5.1</li>
-            <li>Bcrypt JS Password Hashing v.2.4.3</li>
-        </ul>
-        <summary>Plugins & Extension</summary>
-        <ul>
-            <li>Axios v0.19.0</li>
-            <li>Uuid v.4.0</li>
-            <li>Moment.JS v.2.24.0</li>
-            <li>Redux Thunk v.2.3.0</li>
-            <li>Redux DevTools v.2.13.8</li>
-            <li>React-Moment v.0.9.2</li>
-            <li>React-Redux v.7.1.0</li>
-            <li>React Developer Tools v.2.13.8</li>
-        </ul>
-        <summary>Server(s)</summary>
-        <ul>
-            <li>Express JS v.4.17.1</li>
-            <li>Express Validator (Plugin)</li>
-            <li>Mongoose v.5.6.6 (Plugin)</li>
-        </ul>
-        <summary>Database</summary>
-        <ul>
-            <li>Mongo DB Atlas 4.0</li>
-        </ul>
+        <details>
+            <summary>Approach</summary>
+            <ul>
+                <li>Code-First Development</li>
+                <li>Mobile First Design</li>
+                <li>Scalable Templates</li>
+                <li>RESTful Web API (CRUD)</li>
+                <li>Open Source Rich Client Development</li>
+            </ul>
+        </details>
+        <details>
+            <summary>Core Script(s) & Extentions</summary>
+            <ul>
+                <li>JavaScript ECMAScript 6+ (ES6)</li>
+                <li>JavaScript React Syntax (JSX)</li>
+            </ul>
+        </details>
+        <details>
+            <summary>IDEs/ SDKs</summary>
+            <ul>
+                <li>Visual Studio Code 2019 v1.36.1</li>
+                <li>MongoDB Compass Community Edition 1.18.0</li>
+                <li>Postman DE 7.1.1</li>
+            </ul>
+        </details>
+        <details>
+            <summary>Frameworks</summary>
+            <ul>
+                <li>React v.16.8.6</li>
+                <li>Redux v.4.0.4</li>
+            </ul>
+        </details>
+        <details>
+            <summary>Technologies/Libraries</summary>
+            <ul>
+                <li>HTML 5.0 & CSS 3.0</li>
+                <li>Bootstrap v.4.3.1 & Font Awesome v.5.9.0</li>
+                <li>React Hooks & Async/ Await</li>
+                <li>JSON Web Tokens v8.5.1</li>
+                <li>Bcrypt JS Password Hashing v.2.4.3</li>
+            </ul>
+        </details>
+        <details>
+            <summary>Plugins & Extension</summary>
+            <ul>
+                <li>Axios v0.19.0</li>
+                <li>Uuid v.4.0</li>
+                <li>Moment.JS v.2.24.0</li>
+                <li>Redux Thunk v.2.3.0</li>
+                <li>Redux DevTools v.2.13.8</li>
+                <li>React-Moment v.0.9.2</li>
+                <li>React-Redux v.7.1.0</li>
+                <li>React Developer Tools v.2.13.8</li>
+            </ul>
+        </details>
+        <details>
+            <summary>Server(s)</summary>
+            <ul>
+                <li>Express JS v.4.17.1</li>
+                <li>Express Validator (Plugin)</li>
+                <li>Mongoose v.5.6.6 (Plugin)</li>
+            </ul>
+        </details>
+        <details>
+            <summary>Database</summary>
+            <ul>
+                <li>Mongo DB Atlas 4.0</li>
+            </ul>
+        <details>
 </details>
 
 
 ### TABLE OF CONTENT ###
 
-#### INTRODUCTION
-1. [What should it be?](#what-should-it-be? "Goto what-should-it-be?")
-2. [Where will it work?](#where-will-it-work? "Goto Where-will-it-work?")
-3. [Who will use it?](#who-will-use-it? "Goto Who-will-use-it?")
-4. [How will it be used?](#how-will-it-be-used? "Goto how-will-it-be-used?")
+#### INTRODUCTION ####
+1. [What should it be](#what-should-it-be "Goto what-should-it-be")
+2. [Where will it work](#where-will-it-work "Goto where-will-it-work")
+3. [Who will use it](#who-will-use-it "Goto who-will-use-it")
+4. [How will it be used](#how-will-it-be-used "Goto how-will-it-be-used")
 5. [How do you market it?](#how-do-you-market-it "Goto how-do-you-market-it")
 6. [What could go wrong?](#what-could-go-wrong "Goto what-could-go-wrong")
 
-#### RESEARCH METHODOLOGY: INTERVIEW
-7. [Segmentation dimensions](#Segmentation-dimensions "Goto Segmentation-dimensions?")
-8. [Demographic situation](#demographic-situation "Goto demographic-situation?")
+#### RESEARCH METHODOLOGY: INTERVIEW ####
+7. [Segmentation dimensions](#segmentation-dimensions "Goto segmentation-dimensions?")
+8. [Demographic situation](#demographic-situation "Goto demographic-situation")
 9. [Pshychographic situation](#psychographic-situation "Goto psychographic-situation")
 
-#### PERSONA'S & SCENARIO'S
+#### PERSONA'S & SCENARIO'S ####
 10. [Persona 1: Cookie Monster](#persona-1-cookie-monster "Goto persona-1-cookie-monster")
 11. [Persona 2: Elder Claire Thompson](#persona-2-elder-claire-thompson "Goto persona-2-elder-claire-thompson")
 
-#### LIST OF APP FEATURES
+#### LIST OF APP FEATURES ####
 12. [App Core Features](#app-core-features "Goto app-core-features")
 13. [Optional App Features](#optional-app-features "Goto optional-app-features")
 14. [Minimum App Requirements](#minimum-app-requirements "Goto minimum-app-requirements")
 
-#### TECHNOLOGIES
+#### TECHNOLOGIES ####
 15. [Technologies: Full Stack MERN](#technologies-full-stack-MERN "Goto technologies-full-stack-MERN")
 
 - - - -
@@ -133,17 +153,17 @@ A common trait of HOST® Takeaway Guests is that they value friendship and exper
 There are two HOST® typologies and one webmaster role. Webmasters should be able to verify and have full CRUD access over: categories and event registrations - apart from being responsible for the overall functionality of the HOST® website. HOST® organisers, visitors and takeaway guests should be able to either create -or apply to an event. Event detail alterations should be requested with the webmaster.
 
 A) Scope of Visitor Functionalities:
-1. User visits HOST® website and is prompted to use Geolocation services.
-2. User explores results or searches for a: city, food category or event status.
-3. User can view details of the event or get in contact with the HOST by email.
-4. User & HOST® discuss upon terms, conditions and or pickup location.
+    1. User visits HOST® website and is prompted to use Geolocation services.
+    2. User explores results or searches for a: city, food category or event status.
+    3. User can view details of the event or get in contact with the HOST by email.
+    4. User & HOST® discuss upon terms, conditions and or pickup location.
 
 B) Scope of HOST® Functionalities
-1. Guests have to complete a HOST® Takeaway / HOST® Event Form
-2. Webmaster approves/denies HOST® Event Application.
-3. HOST® Member and offer is promoted on the homepage of HOST®.
-4. Ranking in search results is based on interest (e.g. no. of clicks).
-5. Once the event is finished, it will be automatically be removed.
+    * Guests have to complete a HOST® Takeaway / HOST® Event Form
+    * Webmaster approves/denies HOST® Event Application.
+    * HOST® Member and offer is promoted on the homepage of HOST®.
+    * Ranking in search results is based on interest (e.g. no. of clicks).
+    * Once the event is finished, it will be automatically be removed.
  
 ### How do you market it? ###
 Social exclusion is often found to be highest amongst elders in social care, community and nursing housings. To reach this target audience, HOST® must reconsider the technology skills of this audience. To overcome this issue, one could argue to target the community homes, nursing houses, etc. directly (offline promotion). Although they are not a direct audience; nurses can help elders by supporting elders in finding a digital HOST® match online. Aside, once could choose for offline match makers for this target audience. To reach the younger audiences, once could argue to promote HOST® via Google SEO, SEA, Social Media and offline trade fairs.
@@ -180,7 +200,7 @@ Some concerns that where mentioned were Silvia’s allergies, trustworthiness of
 
 ## PERSONAS & SCENARIOS ##
 
-### Persona 1: Cookie Monster / International Exchange Student from USA ###
+### Persona 1: Cookie Monster ###
 Cookie Monster is a 20-year old exchange student from the USA who will study in The Netherlands for 12 months due to his academy-minor: ‘Pepernoten Bakken met Bakker Bart’. Cookie Monster is pursuing a traineeship as a pastry chef, but he realises that he has a small community and network to ask for local placement suggestions. Cookie Monster is a very frivolous chap, who can be everybody’s friend and he is currently living in a large refactored farmhouse in Bourtange (a very small village far from the realistic world). Although Cookie is really charismatic and has a lot of great innovative ideas when it comes to pastries, cheesecakes and other delicatessen; he can’t continuously explore the big cities to make himself feel happy. In this case he is both financially and time restricted with regards to his exchange-traineeship. He finds himself feeling lonely and secluded from the Dutch community due to his international background and the small village he lives in. In the meantime, he misses his friends and family in the USA. Cookie thinks: “There is more I can offer!”
 
 #### Current Experiences: ####
