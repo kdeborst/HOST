@@ -11,25 +11,106 @@ ___ENTRY LEVEL SOFTWARE DEVELOPMENT___
 
 ### TITLE: HOST® MEAL SHARE SOCIAL COMMUNITY ###
 <details>
-    <summary>Executive Summary</summary>
-    __Problem Area__
+    <summary>EXECUTIVE SUMMARY</summary>
+    <h4>Problem Area</h4>
     <p>Social exclusion(s), loneliness, community sharing, food-waste.</p>
-    __Inspiration__
+    <h4>Inspiration</h4>
     <p>http://www.eatwith.com; http://www.cookapp.com; http://experiences.chefsfeed.com</p>
-    __Desired App__
+    <h4>Desired App</h4>
     <p>Web-based social community platform for promoting meal-sharing initiatives (experiences) at local homes.</p>
+    <summary>PROJECT MAIN OBJECTIVES</summary>
+    <ol>
+        <li>At least 2 different UI pages and at least 3 different user input elements.</li>
+        <li>At least 1 UI element is affected by the user’s input.</li>
+        <li>After the user submits their input a decision is made on that input that can cause at least 2 different results.</li>
+        <li>A user’s information is collected together in a single code structure.</li>
+        <li>Support for UNICODE characters in all user text input.</li>
+        <li>Date and time formats reflect the user’s local settings.</li>
+        <li>At least one string is localisable.</li>
+    </ol>
+    <summary>TECHNOLOGIES: FULL-STACK MERN WEBAPPLICATION</summary>
+        <summary>Approach</summary>
+        <ul>
+            <li>Code-First Development</li>
+            <li>Mobile First Design</li>
+            <li>Scalable Templates</li>
+            <li>RESTful Web API (CRUD)</li>
+            <li>Open Source Rich Client Development</li>
+        </ul>
+        <summary>Core Script(s) & Extentions</summary>
+        <ul>
+            <li>JavaScript ECMAScript 6+ (ES6)</li>
+            <li>JavaScript React Syntax (JSX)</li>
+        </ul>
+        <summary>IDEs/ SDKs</summary>
+        <ul>
+            <li>Visual Studio Code 2019 v1.36.1</li>
+            <li>MongoDB Compass Community Edition 1.18.0</li>
+            <li>Postman DE 7.1.1</li>
+        </ul>
+        <summary>Frameworks</summary>
+        <ul>
+            <li>React v.16.8.6</li>
+            <li>Redux v.4.0.4</li>
+        </ul>
+        <summary>Technologies/Libraries</summary>
+        <ul>
+            <li>HTML 5.0 & CSS 3.0</li>
+            <li>Bootstrap v.4.3.1 & Font Awesome v.5.9.0</li>
+            <li>React Hooks & Async/ Await</li>
+            <li>JSON Web Tokens v8.5.1</li>
+            <li>Bcrypt JS Password Hashing v.2.4.3</li>
+        </ul>
+        <summary>Plugins & Extension</summary>
+        <ul>
+            <li>Axios v0.19.0</li>
+            <li>Uuid v.4.0</li>
+            <li>Moment.JS v.2.24.0</li>
+            <li>Redux Thunk v.2.3.0</li>
+            <li>Redux DevTools v.2.13.8</li>
+            <li>React-Moment v.0.9.2</li>
+            <li>React-Redux v.7.1.0</li>
+            <li>React Developer Tools v.2.13.8</li>
+        </ul>
+        <summary>Server(s)</summary>
+        <ul>
+            <li>Express JS v.4.17.1</li>
+            <li>Express Validator (Plugin)</li>
+            <li>Mongoose v.5.6.6 (Plugin)</li>
+        </ul>
+        <summary>Database</summary>
+        <ul>
+            <li>Mongo DB Atlas 4.0</li>
+        </ul>
 </details>
 
 
-#### Table Of Content ####
+### TABLE OF CONTENT ###
 
+#### INTRODUCTION
 1. [What should it be?](#what-should-it-be? "Goto what-should-it-be?")
-1. [Where will it work?](#where-will-it-work? "Goto Where-will-it-work?")
-1. [Who will use it?](#who-will-use-it? "Goto Who-will-use-it?")
-1. [How will it be used?](#how-will-it-be-used? "Goto how-will-it-be-used?")
-1. [How do you market it?](#how-do-you-market-it "Goto how-do-you-market-it")
-1. [What could go wrong?](#what-could-go-wrong "Goto what-could-go-wrong")
+2. [Where will it work?](#where-will-it-work? "Goto Where-will-it-work?")
+3. [Who will use it?](#who-will-use-it? "Goto Who-will-use-it?")
+4. [How will it be used?](#how-will-it-be-used? "Goto how-will-it-be-used?")
+5. [How do you market it?](#how-do-you-market-it "Goto how-do-you-market-it")
+6. [What could go wrong?](#what-could-go-wrong "Goto what-could-go-wrong")
 
+#### RESEARCH METHODOLOGY: INTERVIEW
+7. [Segmentation dimensions](#Segmentation-dimensions "Goto Segmentation-dimensions?")
+8. [Demographic situation](#demographic-situation "Goto demographic-situation?")
+9. [Pshychographic situation](#psychographic-situation "Goto psychographic-situation")
+
+#### PERSONA'S & SCENARIO'S
+10. [Persona 1: Cookie Monster](#persona-1-cookie-monster "Goto persona-1-cookie-monster")
+11. [Persona 2: Elder Claire Thompson](#persona-2-elder-claire-thompson "Goto persona-2-elder-claire-thompson")
+
+#### LIST OF APP FEATURES
+12. [App Core Features](#app-core-features "Goto app-core-features")
+13. [Optional App Features](#optional-app-features "Goto optional-app-features")
+14. [Minimum App Requirements](#minimum-app-requirements "Goto minimum-app-requirements")
+
+#### TECHNOLOGIES
+15. [Technologies: Full Stack MERN](#technologies-full-stack-MERN "Goto technologies-full-stack-MERN")
 
 - - - -
 
@@ -42,11 +123,11 @@ The RESTful Web API and front-end pages allow users to find and view registered 
 ### Who will use it? ###
 The market for HOST® can be segmented into the following Two distinct categories: 
 
-    (1) HOST® Organiser / Visitor
-    One could argue that a HOST® organisers and visitors value friendships based on: emotional connection, similarities, environment, degree of excitement and emotions over intellectuality (Meyer-Briggs, 2019). This group is perceived as a ‘community-aware helper group’ who likes to contribute to the society for a small refund instead of commercially making a profit. HOST® Organisers either prepare a meal for pick-up or share a meal with a HOST® Visitor within their own selected environment. An organiser can be a visitor; and, a visitor can be an organiser dependent on who is ‘eating-out’ and who is organising the event.
+1. HOST® Organiser / Visitor
+One could argue that a HOST® organisers and visitors value friendships based on: emotional connection, similarities, environment, degree of excitement and emotions over intellectuality (Meyer-Briggs, 2019). This group is perceived as a ‘community-aware helper group’ who likes to contribute to the society for a small refund instead of commercially making a profit. HOST® Organisers either prepare a meal for pick-up or share a meal with a HOST® Visitor within their own selected environment. An organiser can be a visitor; and, a visitor can be an organiser dependent on who is ‘eating-out’ and who is organising the event.
 
-    (2) HOST® Takeaway Guests
-    A common trait of HOST® Takeaway Guests is that they value friendship and experience based on: loyalty, logical reasoning and long-term relationships. Often, they seem to acknowledge: intellectuality, time and money over excitement or other emotions. Due to these traits, a HOST® takeaway guest is more likely to order a meal and pick it up at the agreed location; instead of visiting an event at a HOST® Organiser.
+2. HOST® Takeaway Guests
+A common trait of HOST® Takeaway Guests is that they value friendship and experience based on: loyalty, logical reasoning and long-term relationships. Often, they seem to acknowledge: intellectuality, time and money over excitement or other emotions. Due to these traits, a HOST® takeaway guest is more likely to order a meal and pick it up at the agreed location; instead of visiting an event at a HOST® Organiser.
 
 ### How will it be used? ###	
 There are two HOST® typologies and one webmaster role. Webmasters should be able to verify and have full CRUD access over: categories and event registrations - apart from being responsible for the overall functionality of the HOST® website. HOST® organisers, visitors and takeaway guests should be able to either create -or apply to an event. Event detail alterations should be requested with the webmaster.
@@ -87,7 +168,7 @@ For this research there was chosen to substantiate a personal interview with Sil
 #### Demographic Situation ####
 Silvia is 51 years of age and she lives with her husband (42) in Appingedam, a small city in the state: ‘Groningen’ (The Netherlands). They have their own car and they enjoy an income at the minimum welfare level. Silvia is a valuable asset to this research due to her income level, health concerns, personality traits and her small budget to travel, buying groceries and organising parties.
 
-#### Behavioural Situation ####
+#### Psychographic Situation ####
 Silvia has to commute to hospitals and nutritionists at least once a week - due to current health and diet concerns. She is quite dependent on her husband when it comes to doing e.g. grocery shopping and cooking requires her lot of effort, time and energy. Her social environment is restricted to her own family and she has never used food ordering applications before. On the other hand, she uses Google Maps to find her new local nutritionists or hospitals.
 
 For now, Silvia kills her time on social networks, shopping (online and offline) and handcrafting. Nevertheless, this is her second priority. Her first priority is managing and cleaning the household – for as much she can do by herself. If she is being asked the MAGIC questions and everything will be settled at forehand, Silvia would kill her time differently and visit family and friends instead. However; at present, these friends don’t live close and meeting would be a difficult due to money restrictions. “Smartphones help me overcome this barrier as I can (video)call and WhatsApp with my beloved ones from a distance!” She mentions that she does need a little help with configuring her applications to an optimum, as she is not very technical. “This can be very frustrating to me sometimes...”
@@ -121,6 +202,7 @@ The nurses received an offline leaflet from HOST® and decided to look with Elde
 
 ## LIST OF APP FEATURES ##
 
+### APP CORE FEATURES ###
 #### 1. Cross-Platform – Community Connector ####
 * One must be able to easily search and access the meal-share application-, providers- and guest reservations, from one central (landing)page: ‘HOST®’. 
 * This could either be an: Event Registration, Details Search or Admin Panel.
@@ -167,28 +249,46 @@ The nurses received an offline leaflet from HOST® and decided to look with Elde
 ## TECHNOLOGIES: FULL-STACK MERN ##
 
 #### Approach: ####
-Code-First, Scalable Templating & Rich Client Development;
+* Code-First
+* Mobile First Design
+* Scalable Templates
+* RESTful Web API (CRUD)
+* Open Source Rich Client Development
 
-#### Core Script(s): ####
-JavaScript ECMAScript 6+ (ES6);
+#### Core Script(s) & Extentions: ####
+* JavaScript ECMAScript 6+ (ES6)
+* JavaScript React Syntax (JSX)
 
-#### Script Extentions ####
-JavaScript React Syntax (JSX)
+#### IDEs/ SDKs: ####
+* Visual Studio Code 2019 v1.36.1
+* MongoDB Compass Community Edition 1.18.0
+* Postman DE 7.1.1
 
-####IDEs/ SDKs: 
-Visual Studio Code 2019, MongoDB Compass Community, Postman DE 7.1.1;
+#### Frameworks: ####
+* React v.16.8.6
+* Redux v.4.0.4
 
-####Frameworks: 
-React, Mongoose, Redux;
+#### Technologies/Libraries: #####
+* HTML 5.0 & CSS 3.0
+* Bootstrap v.4.3.1 & Font Awesome v.5.9.0
+* React Hooks & Async/ Await
+* JSON Web Tokens v8.5.1. 
+* Bcrypt JS Password Hashing v.2.4.3
 
-####Technologies/Libraries:
-HTML 5.0, CSS 3, RESTful Web API (CRUD), Font Awesome 5.0, Geolocation, Webservices, Async/ Await, React Hooks, JSON Web Tokens, Bcrypt Password Hashing, DevTools;
+#### Plugins & Extension: ####
+* Axios v0.19.0
+* Uuid v.4.0
+* Moment.JS v.2.24.0
+* Redux Thunk v.2.3.0
+* Redux DevTools v.2.13.8
+* React-Moment v.0.9.2
+* React-Redux v.7.1.0
+* React Developer Tools v.2.13.8
 
-####Plugins & Extension
-Uuid v4, Thunk, Redux DevTools, React Developer Tools, CORS: Access-Control-Allow-Origin;
+#### Server(s): ####
+* Express JS v.4.17.1
+* Express Validator (Plugin)
+* Mongoose v.5.6.6 (Plugin)
 
-####Server(s):
-Express JS;
-
-####Database:
-Mongo DB Atlas
+#### Database: ####
+* Mongo DB Atlas 4.0
