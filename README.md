@@ -1,6 +1,6 @@
-![./client/src/img/HOST_logo_transparent.jpg]
-#HOST® Meal Share Social Community Connector#
-##Design Document: Final Microsoft Professional Capstone Project##
+![picture alt](./client/src/img/HOST_logo_transparent.png "HOST® Logo")
+# HOST® Meal Share Social Community Connector #
+___Design Document: Final Microsoft Professional Capstone Project___
 MICROSOFT CERTIFIED SOFTWARE DEVELOPER (MCSD)
 ENTRY LEVEL SOFTWARE DEVELOPMENT
 
@@ -9,8 +9,7 @@ Institute: ITPH Academy, Zwolle
 Publication: 25-07-2019
 Version 1.0.2 
 
-
-##TITLE: HOST® MEAL SHARE SOCIAL COMMUNITY CONNECTOR 
+##TITLE: HOST® MEAL SHARE SOCIAL COMMUNITY CONNECTOR
 Problem Area: Social exclusion(s), loneliness, community sharing, food-waste.
 Inspiration: www.eatwith.com; www.cookapp.com; experiences.chefsfeed.com;
 Desired App: Web-based social community platform for promoting meal-sharing initiatives (experiences) at local homes.
