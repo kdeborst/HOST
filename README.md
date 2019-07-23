@@ -1,22 +1,27 @@
 ![picture alt](./client/src/img/HOST_logo_transparent.png "HOST® Logo")
 
 # HOST® MEAL SHARE SOCIAL COMMUNITY #
-## Design Document: Final Microsoft Professional Capstone Project ##
+### Design Document: Final Microsoft Professional Capstone Project ###
 ___MICROSOFT CERTIFIED SOFTWARE DEVELOPER (MCSD)___
 ___ENTRY LEVEL SOFTWARE DEVELOPMENT___
 
-| Author: Kevin de Borst | Institute: ITPH Academy Zwolle | Publication: 25-07-2019 | v1.0.3 |
+|  Author: Kevin de Borst  |  Institute: ITPH Academy Zwolle  |  Publication: 25-07-2019  |  v1.0.3  |
 
 - - - -
 
 ### TITLE: HOST® MEAL SHARE SOCIAL COMMUNITY ###
 <details>
-    <summary>Problem Area</summary>
+    <summary>Executive Project Summary</summary>
+    <h3>Problem Area</h3>
     <p>Social exclusion(s), loneliness, community sharing, food-waste.</p>
+    <h3>Inspiration</h3>
+    <p><http://www.eatwith.com>; <http://www.cookapp.com>; <http://experiences.chefsfeed.com></p>
+    <h3>Desired App</h3>
+    <p>Web-based social community platform for promoting meal-sharing initiatives (experiences) at local homes.</p>
 </details>
 
-__Inspiration:__ <http://www.eatwith.com>; <http://www.cookapp.com>; <http://experiences.chefsfeed.com>;
-__Desired App:__ Web-based social community platform for promoting meal-sharing initiatives (experiences) at local homes.
+__Inspiration:__ ;
+__Desired App:__ 
 
 ### What should it be? ###
 An online social web application for commenting and promoting (local) hosts who want to prepare food for pickup or organise a meal-share event/experience at home.
