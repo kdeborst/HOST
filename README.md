@@ -131,11 +131,11 @@ ___ENTRY LEVEL SOFTWARE DEVELOPMENT___
 15. [BUGTESTING](#BUGTESTING "Goto BUGTESTING")
 16. [Optional App Features](#optional-app-features "Goto optional-app-features")
 
-<!-- #### HOST® WIREFRAMES ####
-17. [HOST® MEAL SHARE SOCIAL COMMUNITY WIREFRAMES](#HOST-MEAL-SHARE-SOCIAL-COMMUNITY-WIREFRAMES "Goto HOST-MEAL-SHARE-SOCIAL-COMMUNITY-WIREFRAMES") -->
+#### HOST® WIREFRAMES ####
+17. [HOST® MEAL SHARE SOCIAL COMMUNITY WIREFRAMES](#HOST-MEAL-SHARE-SOCIAL-COMMUNITY-WIREFRAMES "Goto HOST-MEAL-SHARE-SOCIAL-COMMUNITY-WIREFRAMES")
 
 #### TECHNOLOGIES ####
-17. [Preferred Technologies: Full Stack MERN](#preferred-technologies-full-stack-MERN "Goto preferred-technologies-full-stack-MERN")
+18. [Preferred Technologies: Full Stack MERN](#preferred-technologies-full-stack-MERN "Goto preferred-technologies-full-stack-MERN")
 
 - - - -
 
@@ -309,7 +309,7 @@ Resources are limited and it is almost impossible to complete all of the above i
 
 ## HOST® MEAL SHARE SOCIAL COMMUNITY WIREFRAMES ##
 <details>
-    <summary>WIREFRAMES IMAGES</summary>
+    <summary>WIREFRAME IMAGES</summary>
     <details>
         <summary>Landing</summary>
         <img src="./client/src/img/templates/wireframe_landing.png" alt="HOST® Landing Page Wireframe" />
@@ -344,6 +344,7 @@ Resources are limited and it is almost impossible to complete all of the above i
 ## PREFERRED TECHNOLOGIES: FULL-STACK MERN ##
 
 <details>
+    <summary>REQUIREMENTS</summary>
     <details>
         <summary>Approach</summary>
         <ol>
