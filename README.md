@@ -5,6 +5,7 @@ ___MICROSOFT CERTIFIED SOFTWARE DEVELOPER (MCSD)___
 ___ENTRY LEVEL SOFTWARE DEVELOPMENT___
 
 Author          |   Kevin de Borst
+- - - - - - - - | - - - - - - - - 
 Insititute      |   ITPH Academy Zwolle
 Publication     |   25-07-2019
 Version         |   1.0.3
