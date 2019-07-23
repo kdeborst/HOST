@@ -5,7 +5,7 @@
 ___MICROSOFT CERTIFIED SOFTWARE DEVELOPER (MCSD)___
 ___ENTRY LEVEL SOFTWARE DEVELOPMENT___
 
-|  Author: Kevin de Borst  |  Institute: ITPH Academy Zwolle  |  Publication: 25-07-2019  |  v1.0.3  |
+|  Author: Kevin de Borst  |  Institute: ITPH Academy Zwolle  |  Publication: 25-07-2019  |  v1.1.0  |
 
 - - - -
 
@@ -135,38 +135,40 @@ ___ENTRY LEVEL SOFTWARE DEVELOPMENT___
 - - - -
 
 ### What should it be? ###
-An online social web application for commenting and promoting (local) hosts who want to prepare food for pickup or organise a meal-share event/experience at home.
+An online social web platform for securely: finding, promoting, sharing experiences and commenting on the nearest (local) hosts who want to prepare food for pickup or organise a meal-share event/experience at home (non-commercial food preparation).
 
 ### Where will it work?	###
-The RESTful Web API and front-end pages allow users to find and view registered HOST® Events or (non-commercial) HOST® Takeaway services. A mobile first approach is expected and HOST® is to be introduced Nationally (The Netherlands) first.
+The RESTful Web API and its front-end components allow users to: (1) find, (2) view, (3) comment, (4) like and (5) become friends with registered: (1) HOST® Experience Events, (2) HOST® Organiser Profiles; or, (3) (non-commercial) HOST® Takeaway Experience. HOST® is to be introduced Nationally (The Netherlands) and a mobile (design) and code first approach is preferred. This application is requested to be written in English and will be upgraded with Dutch language support before testing and deployment. However, this feature falls out of the scope of this project and should be disregarded for now.
 
 ### Who will use it? ###
-The market for HOST® can be segmented into the following Two distinct categories: 
+Before we continue, please be aware that users are required to register with HOST®. Only then, access to private details on: profiles, event experiences, (Geo)location details, etc. is given. Therefore, HOST® decided to segment the market into the following Three distinct (registered) typologies: 
 
-1. HOST® Organiser / Visitor
-One could argue that a HOST® organisers and visitors value friendships based on: emotional connection, similarities, environment, degree of excitement and emotions over intellectuality (Meyer-Briggs, 2019). This group is perceived as a ‘community-aware helper group’ who likes to contribute to the society for a small refund instead of commercially making a profit. HOST® Organisers either prepare a meal for pick-up or share a meal with a HOST® Visitor within their own selected environment. An organiser can be a visitor; and, a visitor can be an organiser dependent on who is ‘eating-out’ and who is organising the event.
+1. HOST® Regular Guest
+Application users who decide not to register will have access to publicly published material only (e.g. 'about-us', 'index', etc.). Those users who do register with HOST®, are assigned a: 'HOST® Regular Guest'-role, by default. Registered HOST® guests should at least have accesss to: (1) the approximate location, (2) profiles; and, (3) create/read messages of HOST® Experience Organisers. A HOST® Regular Guest can be any user on the market and they do not require a personal profile. To be a bit more specific: this group often holds an interest in: (1) meal-sharing, (2) cooking/baking or (3) home-food preparation - non-commercially. 
 
-2. HOST® Takeaway Guests
-A common trait of HOST® Takeaway Guests is that they value friendship and experience based on: loyalty, logical reasoning and long-term relationships. Often, they seem to acknowledge: intellectuality, time and money over excitement or other emotions. Due to these traits, a HOST® takeaway guest is more likely to order a meal and pick it up at the agreed location; instead of visiting an event at a HOST® Organiser.
+2. HOST® Takeaway Guest
+A common trait of HOST® Takeaway Guests is that they value friendship and experience based on: loyalty, logical reasoning and long-term relationships. Often, they seem to acknowledge: (1) intellectuality, (2) time and (3) money over excitement or other emotions (Meyer-Briggs, 2019). Due to these traits, a HOST® takeaway guest is more likely to order a meal and pick it up at the agreed location; instead of visiting an event at a HOST® Organiser. This type of guest requires a personal HOST® Member-profile, order -and order-history features.
+
+3. HOST® Experience Organiser
+One could argue that a HOST® organisers and visitors often value friendships based on: (1) emotional connection, (2) similarities, (3) environment, (4) degree of excitement and (5) emotions over intellectuality (Meyer-Briggs, 2019). This group is perceived as a ‘community-aware helper group’ who likes to contribute to the society for a small refund instead of commercially making a profit. HOST® Organisers either prepare a meal for pick-up or share a meal with a HOST® Visitor within their own selected environment. Note that an organiser can be a visitor; and, a visitor can be an organiser dependent on who is ‘eating-out’ and who is organising the event. Since the HOST® Experience Organiser is vallued to be the most important core-user/asset for the success of this application; they should be able to: (1) create a profile and receive a personalised dashboard, (2) add event experiences, (3) create order-menu's and/or receive personal orders, (4) create and/or become friends, and so on. Basically, a HOST® Experience should be perceived as an event-organiser who requires the tools to become a professional (non-commercial) community sharer. 
 
 ### How will it be used? ###	
-There are two HOST® typologies and one webmaster role. Webmasters should be able to verify and have full CRUD access over: categories and event registrations - apart from being responsible for the overall functionality of the HOST® website. HOST® organisers, visitors and takeaway guests should be able to either create -or apply to an event. Event detail alterations should be requested with the webmaster.
+In total, there are Three HOST® typologies and one webmaster role. Webmasters should be able to verify and have full CRUD access over e.g.: categories and event registrations - apart from being responsible for the overall functionality of the HOST® website. HOST® organisers, visitors and takeaway guests should be able to either create -or apply to an event as described above.
 
-A) Scope of Visitor Functionalities:
-    1. User visits HOST® website and is prompted to use Geolocation services.
-    2. User explores results or searches for a: city, food category or event status.
-    3. User can view details of the event or get in contact with the HOST by email.
-    4. User & HOST® discuss upon terms, conditions and or pickup location.
+>Scope of Visitor Functionalities
+>>* User visits HOST® website and is prompted to use Geolocation services.
+>>* User explores results or searches for a: city, food category or event status.
+>>* User can view details of the event or get in contact with the HOST by email.
+>>* User & HOST® discuss upon terms, conditions and or pickup location.
 
-B) Scope of HOST® Functionalities
-    * Guests have to complete a HOST® Takeaway / HOST® Event Form
-    * Webmaster approves/denies HOST® Event Application.
-    * HOST® Member and offer is promoted on the homepage of HOST®.
-    * Ranking in search results is based on interest (e.g. no. of clicks).
-    * Once the event is finished, it will be automatically be removed.
+>Scope of 'HOST® Experience Organiser' Functionalities
+>>* HOST® Regular Guests have to complete a HOST® Takeaway / HOST® Experience Organiser Profile
+>>* HOST® Member and offer is promoted on the homepage of HOST®.
+>>* Ranking in search results is based on interest (e.g. no. of clicks).
+>>* Once the event is finished, it will be automatically be removed.
  
 ### How do you market it? ###
-Social exclusion is often found to be highest amongst elders in social care, community and nursing housings. To reach this target audience, HOST® must reconsider the technology skills of this audience. To overcome this issue, one could argue to target the community homes, nursing houses, etc. directly (offline promotion). Although they are not a direct audience; nurses can help elders by supporting elders in finding a digital HOST® match online. Aside, once could choose for offline match makers for this target audience. To reach the younger audiences, once could argue to promote HOST® via Google SEO, SEA, Social Media and offline trade fairs.
+Social exclusion is often found to be highest amongst elders in social care, community and nursing housings. To reach this target audience, HOST® must reconsider the technology skills of this audience. To overcome this issue, one could argue to target the community homes, nursing houses, etc. directly (offline promotion). Although they are not a direct audience; nurses can help elders by supporting elders in finding a digital HOST® match online. Aside, once could choose for offline match makers for this target audience. To reach the younger audiences, once could argue to promote HOST® via online: SEO, SEA, Social Media; and, offline: home-care, trade and community fairs.
 
 ### What could go wrong? ###
 Dutch legislation makes a distinction between hobbyist and professionals when it comes to food preparation and hosting events. Once the HOST® Member becomes extremely successful, he/she might earn too much money from meal-sharing and preparation. The Dutch HM Revenue and Customs requires ‘professionals’ to keep a solid administration and tax payments over sold resources. This might become a potential drawback for subscribing (paid) meal-share events on the HOST® website.
@@ -207,7 +209,7 @@ Cookie Monster is a 20-year old exchange student from the USA who will study in 
 Cookie Monster struggles to make new friends and blend into society. He focuses on surviving, rather than experiencing a pleasurable time during his 12 months within The Netherlands. He doesn’t know that Dutch people are crazy about American Chocolate Chip Cookies – which is Cookie’s specialty – and that he could be a very valuable social connector in our Dutch society. For now, he is doubting whether or not he will finish his exchange minor or go back to the USA.
 
 #### Current Solution: ####
-Cookie has a laptop and smartphone. One day he decided to try his chances on Tindr and a Dutch Social Network. He fetched his phone, asked Siri for: ‘dating apps and social networks’, and HOST® popped up on the third line within the search results. Cookie became interested and found that two of his African neighbours are hosting a Puff-Puff Backyard Party. After reading the profile, he wondered what Puff-Puffs are and he confronted his neighbours by mail - since they were out at that time. The African neighbours were very enthusiastic and mentioned that the entire village had been invited. Cookie could join for free as he was new and the African neighbours did not know that Cookie had just moved in. Long story short: Cookie made new friends, had a great (international) experience and he added the African Puff-Puff Speciality to his pastry list. Cookie decided to stay and HOST® an American Cookie Party 10 weeks later.
+Cookie has a laptop and smartphone. One day he decided to try his chances on Tindr and a Dutch Social Network. He fetched his phone, asked Siri for: ‘dating apps and social networks’, and HOST® popped up on the third line within the search results. Cookie became interested and found - based on Geolocation services - that two of his African neighbours are hosting a Puff-Puff Backyard Party. After reading the profile, he wondered what Puff-Puffs are and he confronted his neighbours by commenting on their (online) event - since the neighbours were out at that time. The African neighbours were very enthusiastic and mentioned that the entire village had been invited. Cookie could join for free as he was new and the African neighbours did not know that Cookie had just moved in. Long story short: Cookie made new friends, had a great (international) experience and he added the African Puff-Puff Speciality to his pastry list. Cookie decided to stay and HOST® an American Cookie Party 10 weeks later.
 
 
 ### Persona 2: Elder Claire Thompson ###
@@ -221,19 +223,65 @@ The nurses received an offline leaflet from HOST® and decided to look with Elde
 
 
 ## LIST OF APP FEATURES ##
+### CORE APP FEATURES ###
+Resources are limited and it is almost impossible to complete all of the above in only Three weeks time. Hence, focus is required and features will be split into: (1) Core; -and, (2) Optional App features (for future development). In some cases, one can find (code-)models and routes which are not implemented within the actual front-end components of the application yet. Please bear with the development of the application and also note that the database user is initialised for Admin. Obviously, this will be changed upon the further development of the application. For now, the main project requirements and the outcome is to be defined as follows:
 
-### APP CORE FEATURES ###
-#### 1. Cross-Platform – Community Connector ####
+
+### MICROSOFTS' MCSD MAIN PROJECT REQUIREMENTS ###
+1. At least 2 different UI pages and at least 3 different user input elements.
+2. At least 1 UI element is affected by the user’s input.
+3. After the user submits their input a decision is made on that input that can cause at least 2 different results.
+4. A user’s information is collected together in a single code structure.
+5. Support for UNICODE characters in all user text input.
+6. Date and time formats reflect the user’s local settings.
+7. At least one string is localisable.
+
+
+#### Outcome: Prototype Functionalities & Core Application Features ####
+* Focus: 
+    * security (authorisation)
+    * scalability (containers, components)
+    * accessibility (cross-platform)
+    * ease-of-use (UX, personal interview).
+* Public UI Pages: 
+    * Landing
+    * About HOST®
+    * Login
+    * Register
+* Private UI Pages: 
+    * Personalised Dashboard// dashboard changes after creating a profile; otherwise Guest Dashboard (default).
+    * Interactive navigation// weblinks change on state ISAUTHENTICATED: true.
+* Functionalities:
+    * Securely register with personal web-authentication (remember ease of use ['Interview': 'Silvia']).
+    * Create/Edit Profile Form from personalised dashboard// No password change functionality (yet)!
+    * Add Event and (instantly) display HOST® Organiser Event Experience from personalised dashboard.
+* Single Code Structure:
+    * Destructured data is to be formatted within the models: User, Profile; and, Message for now.
+    * Profile-model will contain (almost all) information (could be used as a binding-model for JSON-data?!)
+* UNICODE & Local DateTime Support:
+    * Data is to be stored 'in the cloud', preferably in JSON-Format.
+    * Since the website(-code) is programmed in English at first, date will be set to YYYY/MM/DD by default.
+    * To comply with the MCSD requirements, there is decided to implement Moment JS as an extension.
+    * Moment JS code can change DateTime to a local state (DD/MM/YY) when upgraded with Dutch language support!
+
+
+>Bug Test Update: 23 june 2019
+>>- Test performed in Google Chrome (with DevTool-extensions from section Technologies).
+>>- Small bug in React useState hook on edit profile // Update data makes app crash, but edits in DB.
+
+
+### OPTIONAL APP FEATURES ###
+#### 1. Overall Social Meal-Share Community Upgrade ####
 * One must be able to easily search and access the meal-share application-, providers- and guest reservations, from one central (landing)page: ‘HOST®’. 
-* This could either be an: Event Registration, Details Search or Admin Panel.
-* Guests: have access to view HOST® organisers & their event details (incl. email).
+* This could either be an: HOST® Organiser Experience Event, Details Search or Personal Dashboard Panel.
+* Guests: have access to view HOST® organisers & their event details (no exact locations of organisers!).
 * Webmasters: receive full CRUD accessibility over events and the web-application.
 * Keywords: Autocomplete; dynamic data display; ease-of -use & -access; secure.
 
 #### 2. Event Registration Form, HOST® Event Details, Admin (Panel)	####
-* Every user can complete a HOST® Event form – no registration required.
+* Every HOST® Regular user can complete a HOST® Member profile and become a HOST® Organiser/TakeAway.
 * HOST® Members must be able to create an overview of their product offering. 
-* HOST® Member Applications will be approved or denied by webmaster/admin.
+* HOST® Member Applications will have to be approved or denied by webmaster/admin.
 * Approved Events are ranked and promoted on the main page of the web-app.
 * Takeaway guests should be able to get in contact with HOST® Event organisers.
 * Event should automatically be hidden and archived once the event date is passed.
@@ -247,68 +295,91 @@ The nurses received an offline leaflet from HOST® and decided to look with Elde
 * Guests should be able to get in contact with a HOST® Member.
 * Privacy should be top priority, contact button & event city is all users can see.
 
-### OPTIONAL APP FEATURES ###
-#### HOST® Organiser: Full Access Control Over Own Event(s) #####
+#### 4. HOST® Organiser: Full Access Control Over Own Event(s) #####
 * Upon approval of an event, there is send a unique code to the HOST® Organiser.
 * Unique codes give full CRUD access over a particular event without registration.
 * Validation rules should be applied on unique ID in relation to e-mail address.
 * Two-Step e-mail validation should be applied when submitting an Event Form.
- 
-## MINIMUM APP REQUIREMENTS ##
-
-### Main Objectives / Basic Functionality Requirements ###
-1. At least 2 different UI pages and at least 3 different user input elements.
-2. At least 1 UI element is affected by the user’s input.
-3. After the user submits their input a decision is made on that input that can cause at least 2 different results.
-4. A user’s information is collected together in a single code structure.
-5. Support for UNICODE characters in all user text input.
-6. Date and time formats reflect the user’s local settings.
-7. At least one string is localisable.
 
 
-## TECHNOLOGIES: FULL-STACK MERN ##
+## PREFERRED TECHNOLOGIES: FULL-STACK MERN ##
 
-#### Approach: ####
-* Code-First
-* Mobile First Design
-* Scalable Templates
-* RESTful Web API (CRUD)
-* Open Source Rich Client Development
-
-#### Core Script(s) & Extentions: ####
-* JavaScript ECMAScript 6+ (ES6)
-* JavaScript React Syntax (JSX)
-
-#### IDEs/ SDKs: ####
-* Visual Studio Code 2019 v1.36.1
-* MongoDB Compass Community Edition 1.18.0
-* Postman DE 7.1.1
-
-#### Frameworks: ####
-* React v.16.8.6
-* Redux v.4.0.4
-
-#### Technologies/Libraries: #####
-* HTML 5.0 & CSS 3.0
-* Bootstrap v.4.3.1 & Font Awesome v.5.9.0
-* React Hooks & Async/ Await
-* JSON Web Tokens v8.5.1. 
-* Bcrypt JS Password Hashing v.2.4.3
-
-#### Plugins & Extension: ####
-* Axios v0.19.0
-* Uuid v.4.0
-* Moment.JS v.2.24.0
-* Redux Thunk v.2.3.0
-* Redux DevTools v.2.13.8
-* React-Moment v.0.9.2
-* React-Redux v.7.1.0
-* React Developer Tools v.2.13.8
-
-#### Server(s): ####
-* Express JS v.4.17.1
-* Express Validator (Plugin)
-* Mongoose v.5.6.6 (Plugin)
-
-#### Database: ####
-* Mongo DB Atlas 4.0
+<details>
+    <details>
+        <summary>Approach</summary>
+        <ol>
+            <li>Code-First</li>
+            <li>Mobile First Design</li>
+            <li>Scalable Templates</li>
+            <li>Open Source RESTful Web API (CRUD-Functionalities)</li>
+            <li>Open Source Rich Client Development</li>
+        </ol>
+    </details>
+    <details>
+        <summary>Core Script(s) & Extentions</summary>
+        <ol>
+            <li>JavaScript ECMAScript 6+ (ES6)</li>
+            <li>JavaScript React Syntax (JSX)</li>
+        </ol>
+    </details>
+    <details>
+        <summary>IDEs/ SDKs</summary>
+        <ol>
+            <li>Visual Studio Code 2019 v1.36.1</li>
+            <li>MongoDB Compass Community Edition 1.18.0</li>
+            <li>Postman DE 7.1.1</li>
+        </ol>
+    </details>
+    <details>
+        <summary>IDEs/ SDKs</summary>
+        <ol>
+            <li>Visual Studio Code 2019 v1.36.1</li>
+            <li>MongoDB Compass Community Edition 1.18.0</li>
+            <li>Postman DE 7.1.1</li>
+        </ol>
+    </details>
+    <details>
+        <summary>Frameworks</summary>
+        <ol>
+            <li>React v.16.8.6</li>
+            <li>Redux v.4.0.4</li>
+        </ol>
+    </details>
+    <details>
+        <summary>Technologies/Libraries</summary>
+        <ol>
+            <li>HTML 5.0 & CSS 3.0</li>
+            <li>Bootstrap v.4.3.1 & Font Awesome v.5.9.0</li>
+            <li>React Hooks & Async/ Await</li>
+            <li>JSON Web Tokens v.8.5.1</li>
+            <li>Bcrypt JS Password Hashing v.2.4.3</li>
+        </ol>
+    </details>
+    <details>
+        <summary>Plugins & Extension</summary>
+        <ol>
+            <li>Axios v0.19.0</li>
+            <li>Uuid v.4.0</li>
+            <li>Moment.JS v.2.24.0</li>
+            <li>Redux Thunk v.2.3.0</li>
+            <li>Redux DevTools v.2.13.8</li>
+            <li>React-Moment v.0.9.2</li>
+            <li>React-Redux v.7.1.0</li>
+            <li>React Developer Tools v.2.13.8</li>
+        </ol>
+    </details>
+    <details>
+        <summary>Server(s)</summary>
+        <ol>
+            <li>Express JS v.4.17.1</li>
+            <li>Express Validator (Plugin)</li>
+            <li>Mongoose v.5.6.6 (Plugin)</li>
+        </ol>
+    </details>
+    <details>
+        <summary>Database</summary>
+        <ol>
+            <li>Mongo DB Atlas 4.0</li>
+        </ol>
+    </details>
+</details>
