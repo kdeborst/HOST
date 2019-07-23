@@ -5,7 +5,7 @@
 ___MICROSOFT CERTIFIED SOFTWARE DEVELOPER (MCSD)___
 ___ENTRY LEVEL SOFTWARE DEVELOPMENT___
 
-|  Author: Kevin de Borst  |  Institute: ITPH Academy Zwolle  |  Publication: 25-07-2019  |  v1.1.1  |
+|  Author: Kevin de Borst  |  Institute: ITPH Academy Zwolle  |  Publication: 25-07-2019  |  v1.1.2  |
 
 - - - -
 
@@ -131,11 +131,11 @@ ___ENTRY LEVEL SOFTWARE DEVELOPMENT___
 15. [BUGTESTING](#BUGTESTING "Goto BUGTESTING")
 16. [Optional App Features](#optional-app-features "Goto optional-app-features")
 
-#### HOST® WIREFRAMES ####
-17. [HOST® MEAL SHARE SOCIAL COMMUNITY WIREFRAMES](#HOST-MEAL-SHARE-SOCIAL-COMMUNITY-WIREFRAMES "Goto HOST-MEAL-SHARE-SOCIAL-COMMUNITY-WIREFRAMES")
+<!-- #### HOST® WIREFRAMES ####
+17. [HOST® MEAL SHARE SOCIAL COMMUNITY WIREFRAMES](#HOST-MEAL-SHARE-SOCIAL-COMMUNITY-WIREFRAMES "Goto HOST-MEAL-SHARE-SOCIAL-COMMUNITY-WIREFRAMES") -->
 
 #### TECHNOLOGIES ####
-18. [Preferred Technologies: Full Stack MERN](#preferred-technologies-full-stack-MERN "Goto preferred-technologies-full-stack-MERN")
+17. [Preferred Technologies: Full Stack MERN](#preferred-technologies-full-stack-MERN "Goto preferred-technologies-full-stack-MERN")
 
 - - - -
 
@@ -312,31 +312,31 @@ Resources are limited and it is almost impossible to complete all of the above i
     <summary>WIREFRAMES IMAGES</summary>
     <details>
         <summary>Landing</summary>
-        ![picture alt](./client/src/img/templates/wireframe_landing.png "HOST® Landing Page Wireframe")
+        <img src="./client/src/img/templates/wireframe_landing.png" alt="HOST® Landing Page Wireframe" />
     </details>
     <details>
         <summary>Register</summary>
-        ![picture alt](./client/src/img/templates/wireframe_register.png "HOST® Register Wireframe")
+        <img src="./client/src/img/templates/wireframe_register.png" alt="HOST® Register Wireframe" />
     </details>
     <details>
         <summary>Login</summary>
-        ![picture alt](./client/src/img/templates/wireframe_login.png "HOST® Login Wireframe")
+        <img src="./client/src/img/templates/wireframe_login.png" alt="HOST® Login Wireframe" />
     </details>
     <details>
         <summary>HOST® Guest Dashboard</summary>
-        ![picture alt](./client/src/img/templates/wireframe_guestdash.png "HOST® Guest Dashboard Wireframe")
+        <img src="./client/src/img/templates/wireframe_guestdash.png" alt="HOST® Guest Dashboard Wireframe" />
     </details>
     <details>
         <summary>HOST® Member Dashboard</summary>
-        ![picture alt](./client/src/img/templates/wireframe_memberdash.png "HOST® Member Dashboard Wireframe")
+        <img src="./client/src/img/templates/wireframe_memberdash.png" alt="HOST® Member Dashboard Wireframe" />
     </details>
     <details>
         <summary>Create HOST® Profile Form</summary>
-        ![picture alt](./client/src/img/templates/wireframe_upgrade-profile.png "HOST® Upgrade Profile Form Wireframe")
+        <img src="./client/src/img/templates/wireframe_upgrade-profile.png" alt="HOST® Upgrade Profile Form Wireframe" />
     </details>
     <details>
         <summary>Create HOST® Experience Event</summary>
-        ![picture alt](./client/src/img/templates/wireframe_add-experience.png "HOST® Add Experience Wireframe")
+        <img src="./client/src/img/templates/wireframe_add-experience.png" alt="HOST® Add Experience Wireframe" />
     </details>
 </details>
 
@@ -344,7 +344,6 @@ Resources are limited and it is almost impossible to complete all of the above i
 ## PREFERRED TECHNOLOGIES: FULL-STACK MERN ##
 
 <details>
-    <summary>HOST® MEAL SHARE SOCIAL COMMUNITY WIREFRAMES</summary>
     <details>
         <summary>Approach</summary>
         <ol>
