@@ -37,7 +37,7 @@ if(localStorage.token) {
 	setAuthorisation(localStorage.token);
 }
 
-const App = () => { 
+const HOST = () => { 
 	
 	useEffect(() => {
 		store.dispatch(loadAccount());
@@ -69,4 +69,4 @@ const App = () => {
 	)
 };
 
-export default App;
+export default HOST;

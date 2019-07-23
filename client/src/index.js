@@ -1,5 +1,11 @@
+/* Required Dependencies */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import HOST from './HOST';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    
+    <HOST />,
+    document.getElementById('root')
+    
+);
