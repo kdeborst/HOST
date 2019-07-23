@@ -101,7 +101,7 @@ ___ENTRY LEVEL SOFTWARE DEVELOPMENT___
             <ul>
                 <li>Mongo DB Atlas 4.0</li>
             </ul>
-        <details>
+        </details>
 </details>
 
 
