@@ -5,7 +5,7 @@
 ___MICROSOFT CERTIFIED SOFTWARE DEVELOPER (MCSD)___
 ___ENTRY LEVEL SOFTWARE DEVELOPMENT___
 
-|  Author: Kevin de Borst  |  Institute: ITPH Academy Zwolle  |  Publication: 25-07-2019  |  v1.1.2  |
+|  Author: Kevin de Borst  |  Institute: ITPH Academy Zwolle  |  Publication: 25 Juli 2019  |  v2.0.0  |
 
 - - - -
 
@@ -128,11 +128,11 @@ ___ENTRY LEVEL SOFTWARE DEVELOPMENT___
 12. [Core App Features](#core-app-features "Goto core-app-features")
 13. [MS MCSD's Main Project Requirements](#ms-mcsds-main-project-requirements "Goto ms-mcsds-main-project-requirements")
 14. [Desired Outcome: Prototype Core Features](#Desired-Outcome-Prototype-Core-Features "Goto Desired-Outcome-Prototype-Core-Features")
-15. [BUGTESTING](#BUGTESTING "Goto BUGTESTING")
+15. [Bugtesting](#Bugtesting "Goto BUGTESTING")
 16. [Optional App Features](#optional-app-features "Goto optional-app-features")
 
 #### HOST® WIREFRAMES ####
-17. [HOST® MEAL SHARE SOCIAL COMMUNITY WIREFRAMES](#HOST-MEAL-SHARE-SOCIAL-COMMUNITY-WIREFRAMES "Goto HOST-MEAL-SHARE-SOCIAL-COMMUNITY-WIREFRAMES")
+17. [Wireframes](#wireframes "Goto Wireframes")
 
 #### TECHNOLOGIES ####
 18. [Preferred Technologies: Full Stack MERN](#preferred-technologies-full-stack-MERN "Goto preferred-technologies-full-stack-MERN")
@@ -255,6 +255,7 @@ Resources are limited and it is almost impossible to complete all of the above i
     * Register
 * Private UI Pages: 
     * Personalised Dashboard// dashboard changes after creating a profile; otherwise Guest Dashboard (default).
+    * Automatic redirect to Dashboard once logged in.
     * Interactive navigation// weblinks change on state ISAUTHENTICATED: true.
 * Functionalities:
     * Securely register with personal web-authentication (remember ease of use ['Interview': 'Silvia']).
@@ -270,7 +271,7 @@ Resources are limited and it is almost impossible to complete all of the above i
     * Moment JS code can change DateTime to a local state (DD/MM/YY) when upgraded with Dutch language support!
 
 ### BUGTESTING ###
->Bug Test Update: 23 june 2019
+>Bug Test Update: 23 June 2019
 >>- Test performed in Google Chrome (with DevTool-extensions from section Technologies).
 >>- Small bug in React useState hook on edit profile // Update data makes app crash, but edits in DB.
 
@@ -307,7 +308,7 @@ Resources are limited and it is almost impossible to complete all of the above i
 * Two-Step e-mail validation should be applied when submitting an Event Form.
 
 
-## HOST® MEAL SHARE SOCIAL COMMUNITY WIREFRAMES ##
+## WIREFRAMES ##
 <details>
     <summary>WIREFRAME IMAGES</summary>
     <details>
@@ -360,14 +361,6 @@ Resources are limited and it is almost impossible to complete all of the above i
         <ol>
             <li>JavaScript ECMAScript 6+ (ES6)</li>
             <li>JavaScript React Syntax (JSX)</li>
-        </ol>
-    </details>
-    <details>
-        <summary>IDEs/ SDKs</summary>
-        <ol>
-            <li>Visual Studio Code 2019 v1.36.1</li>
-            <li>MongoDB Compass Community Edition 1.18.0</li>
-            <li>Postman DE 7.1.1</li>
         </ol>
     </details>
     <details>
